@@ -4,7 +4,7 @@ A public, data-driven war-gaming simulator for the War Studies community. Step
 into a senior role in a fictional crisis, make the decisions events force on you,
 watch the situation evolve, and receive a debrief on how *you* decide.
 
-**▶ Play: https://nuvixstudio.github.io/war-games/**
+**▶ Play: https://nodesaint.github.io/war-games/**
 
 > **Exercise only.** Every scenario, state, actor and event is fictional. Nothing
 > here is operational, predictive, or an assessment of any real country,

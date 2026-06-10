@@ -11,7 +11,7 @@ Studies community. Single-player. You take a senior role in a fictional crisis,
 make decisions, see them critiqued, and get a debrief on how you decide. Deploys
 to GitHub Pages. British English throughout.
 
-Live URL: `https://nuvixstudio.github.io/war-games/`
+Live URL: `https://nodesaint.github.io/war-games/`
 
 ## Architecture in one breath
 
