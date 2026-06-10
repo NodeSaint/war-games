@@ -5,8 +5,8 @@ import { getNode } from './store'
 
 /** Plain-language reads of a strong / weak final value for each dimension. */
 const STRONG: Record<MetricId, string> = {
-  attribution: 'You ended the crisis actually knowing what had happened — you decided your way to clarity rather than guessing.',
-  escalation: 'You kept the crisis low on the ladder; the situation never ran away from your ability to decide.',
+  attribution: 'You concluded the crisis with a sound evidential basis for your decisions, rather than acting on supposition.',
+  escalation: 'You kept the crisis low on the escalation ladder; events did not outrun your capacity to decide.',
   credibility: 'Your resolve and your word still carry weight — you signalled deterrence without bluffing it away.',
   cohesion: 'The alliance finished more united than it started; you denied the adversary its cheapest win, decoupling.',
   domestic: 'You carried your public with you, preserving the political room to manoeuvre that audience costs usually erode.',

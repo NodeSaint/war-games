@@ -51,11 +51,22 @@ src/scenarios/ index(registry) · silent-ledger(flagship) · …
 
 ## Status — where we are
 
-**MVP is built, deployed and live.** Engine, instrument-cluster UI, debrief with
-decision profile, and the BYO-key AI panel are all in. Three scenarios shipped:
-**SILENT LEDGER** (7-phase, Advanced, flagship), **GREY CASCADE** (4-phase,
-Intermediate, AI-cyber), **NIGHT CROSSING** (2-phase, Introductory). Build green;
-live at https://nodesaint.github.io/war-games/ with assets resolving at base path.
+**MVP is built, deployed and live, with eight scenarios.** Engine, instrument-cluster
+UI, debrief with decision profile, and the BYO-key AI panel are all in. Live at
+https://nodesaint.github.io/war-games/.
+
+Scenarios (all data, fictional analogues in a shared universe — Federation =
+Russia-analogue, Continental Republic = China-analogue, Republic of Khouran =
+Iran-analogue, Atlantic Power/Columbia = US-analogue, Meilan = Taiwan-analogue,
+Trident Pact = AUKUS-analogue; real flashpoint named only in each `basis`):
+SILENT LEDGER (7, Advanced, flagship), PORCELAIN TIDE (6, Advanced, Taiwan),
+ATLANTIC TILT (5, Advanced, NATO/US-reliance), NARROW WATERS (5, Advanced, Iran),
+GREY CASCADE (4, Intermediate, AI-cyber), NORTHERN TITHE (4, Intermediate, N.Sea),
+TRIDENT PACT (4, Intermediate, AUKUS), NIGHT CROSSING (2, Introductory).
+
+**Voice/register is now codified** in SCHEMA §5a: academic, reserved, analytically
+precise for a defence/policy/postgraduate audience. All copy has had a register
+pass. Future content MUST follow it.
 
 ## Next up (see tasks/todo.md and ISSUES.md)
 

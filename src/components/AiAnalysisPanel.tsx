@@ -66,12 +66,20 @@ export function AiAnalysisPanel({
           </div>
         </div>
 
-        <div className="flex items-center gap-2 rounded-md border border-border/60 bg-muted/30 p-3">
-          <ShieldCheck className="size-4 shrink-0 text-signal-good" />
-          <p className="font-mono text-[11px] leading-relaxed text-muted-foreground">
-            Your key stays in this browser (localStorage) and is sent directly to
-            Anthropic. It is never committed, logged, or sent anywhere else. Clear it
-            any time by emptying the field.
+        <div className="space-y-2 rounded-md border border-border/60 bg-muted/30 p-3">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="size-4 shrink-0 text-signal-good" />
+            <p className="font-mono text-[11px] leading-relaxed text-muted-foreground">
+              Your key is sent directly to Anthropic from your browser and to no one
+              else. This site has no backend; the key is never transmitted to, logged
+              by, or committed to this project. Clear it any time by emptying the field.
+            </p>
+          </div>
+          <p className="pl-6 font-mono text-[11px] leading-relaxed text-muted-foreground/80">
+            Note: if you tick “remember”, the key is held in this browser’s
+            localStorage in clear text, where a malicious browser extension or a
+            cross-site-scripting flaw could in principle read it. Best practice: use a
+            spend-limited key, and do not remember it on a shared or public machine.
           </p>
         </div>
 

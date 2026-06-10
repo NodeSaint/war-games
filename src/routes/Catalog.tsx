@@ -23,15 +23,15 @@ export function Catalog() {
           Strategic Decision Simulator
         </div>
         <h1 className="max-w-3xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-          Decisions under uncertainty, at the speed events actually move.
+          Strategic decision-making under uncertainty.
         </h1>
         <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">
-          A war game is a structured argument with yourself. Step into a strategic
-          role, make the calls a real crisis would force on you, and watch the
-          situation shift. Every decision is critiqued — its strengths, its risks,
-          why a competent leader might still choose it — and a debrief at the end
-          shows you how <em>you</em> tend to decide. Fictional throughout; grounded
-          in real concepts.
+          Each exercise places you in a senior role in a developing crisis and
+          requires the decisions it would force on you. Every choice is assessed —
+          its strengths, its risks, and the reasoning by which a competent
+          decision-maker might justify it — and a structured debrief sets out how you
+          tend to decide. The scenarios are fictional; the dilemmas and the concepts
+          are drawn from contemporary strategic practice.
         </p>
       </section>
 

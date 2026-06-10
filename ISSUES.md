@@ -11,6 +11,9 @@ DONE / WONTFIX.
 - [OPEN] (a11y/playtest) Live deploy confirmed serving, but not yet manually
   played end-to-end in a browser. Walk each scenario to a debrief on desktop and
   mobile; confirm HashRouter deep links and resume-from-localStorage behave.
+- [OPEN] (perf) Main JS bundle is ~180 kB gzip and growing with each scenario
+  (all scenarios are statically imported). Code-split scenarios via dynamic
+  `import()` so the catalogue loads light and each game is fetched on demand.
 - [OPEN] (testing) No automated tests yet. Priority targets: `applyEffects`
   clamping, `signalLevel` polarity, `resolveEnding` archetype boundaries,
   `computeProfile` axis maths.

@@ -11,28 +11,30 @@ export function About() {
           About
         </div>
         <h1 className="text-3xl font-bold tracking-tight">
-          A thinking tool, not a video game.
+          An instrument for structured judgement.
         </h1>
       </header>
 
       <Card>
         <CardContent className="space-y-4 p-6 text-[15px] leading-relaxed text-foreground/90">
           <p>
-            War Games is a single-player strategic decision simulator built for the
-            War Studies community — students, researchers, and the wider defence and
-            OSINT audience. You step into a senior role in a crisis, make the calls
-            events force on you, and watch the situation evolve. Every decision is
-            critiqued for its strengths, its risks, and the reasoning a competent
-            leader might use to justify it. At the end you receive a debrief on how{' '}
-            <em>you</em> tend to decide.
+            War Games is a single-player strategic decision simulator intended for the
+            war studies community — postgraduate researchers, practitioners, and the
+            wider defence and policy audience. The participant occupies a senior role
+            in a developing crisis, takes the decisions events force, and observes how
+            the situation evolves. Each decision is assessed against its strengths, its
+            risks, and the reasoning by which a competent decision-maker might justify
+            it. A structured debrief then characterises the participant's pattern of
+            judgement.
           </p>
           <p>
-            It exists because the most valuable thing a war game teaches is not the
-            right answer — there usually isn't one — but self-knowledge under
-            pressure. When do you reach for escalation and when for the off-ramp? Do
-            you wait for evidence or back your instinct? Do you keep a human hand on
-            the irreversible decisions? Those defaults are what you carry into the
-            real thing.
+            The premise is that the principal value of a war game lies less in
+            identifying a correct answer — there is rarely one — than in exposing how
+            an individual reasons under pressure: when they favour escalation and when
+            restraint; whether they act on evidence or on judgement ahead of it;
+            whether they retain human control over decisions that cannot be reversed.
+            Those tendencies, once recognised, are what a decision-maker carries into
+            the genuine case.
           </p>
         </CardContent>
       </Card>

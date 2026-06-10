@@ -17,12 +17,13 @@ export const nightCrossing: Scenario = {
   estPhases: 2,
   role: 'Sector Duty Commander on the eastern frontier of Verlandia',
   brief:
-    'It is 0314. Acoustic and radar sensors along the frontier have picked up a swarm of small ' +
-    'uncrewed aircraft — between twelve and twenty, flying low and slow — crossing from the ' +
-    'Federation side into your sector. They are not squawking. They could be a reconnaissance ' +
-    'probe, a smuggling run, a deliberate provocation, or the first move of something worse. Your ' +
-    'air-defence section is awake and asking for orders. The nearest town is fifteen kilometres ' +
-    'on. You have minutes, not hours.',
+    'At 0314, acoustic and radar sensors along the frontier detected a swarm of small uncrewed ' +
+    'aircraft — assessed at between twelve and twenty — crossing from Federation territory into ' +
+    'your sector at low altitude and low speed. They are not transmitting identification. The ' +
+    'incursion is consistent with several hypotheses: reconnaissance, smuggling, deliberate ' +
+    'provocation, or the leading element of a larger action. The air-defence section is requesting ' +
+    'orders. The nearest population centre is fifteen kilometres beyond the contacts. A decision ' +
+    'is required within minutes.',
   objectives: [
     'Decide a proportionate response to an ambiguous incursion.',
     'Weigh the cost of being wrong in either direction.',
@@ -42,13 +43,13 @@ export const nightCrossing: Scenario = {
       id: 'p1-crossing',
       phase: 1,
       phaseLabel: 'PHASE 1 · THE CROSSING',
-      title: 'Contacts, low and slow',
+      title: 'Unidentified contacts inbound',
       narrative:
-        'The plot fills with small returns. Your air-defence officer wants a weapons-free order; ' +
-        'the standing automated counter-UAS system reports it can engage the whole swarm in one ' +
-        'pass if you let it act on its own logic. You do not know whose drones these are, what ' +
-        'they carry, or what they are for. Whatever you decide, you will have to defend it in ' +
-        'daylight.',
+        'The plot shows numerous small returns. The air-defence officer requests a weapons-free ' +
+        'authorisation; the standing automated counter-UAS system reports that it can engage the ' +
+        'entire swarm in a single pass if released to act on its own logic. The origin, payload ' +
+        'and purpose of the aircraft are unknown. Whichever course is chosen will have to be ' +
+        'justified once the picture is clearer.',
       decision: {
         prompt: 'The swarm is inbound and unidentified. What is your order?',
         options: [
@@ -56,9 +57,9 @@ export const nightCrossing: Scenario = {
             id: 'engage',
             label: 'Weapons free — engage and destroy the swarm now.',
             consequence:
-              'Your section opens up. Most of the swarm comes down in fields short of the town. ' +
-              'The frontier is loud for ninety seconds, then silent. You have removed the threat — ' +
-              'and committed to whatever those drones turn out to have been.',
+              'The section engages. Most of the swarm is brought down short of the population ' +
+              'centre, the engagement lasting under two minutes. The immediate threat is removed, ' +
+              'at the cost of committing to the consequences of whatever the aircraft prove to have been.',
             critique: {
               strengths: [
                 'Removes any chance the swarm was armed and bound for the town.',
@@ -137,9 +138,10 @@ export const nightCrossing: Scenario = {
             id: 'observe',
             label: 'Do not engage at all — observe, record everything, and route to capitals for orders.',
             consequence:
-              'You hold completely. The swarm overflies two of your sites in a deliberate pattern, ' +
-              'loiters, and departs the way it came. You have a flawless intelligence picture of ' +
-              'what they wanted to see — and the uncomfortable fact that you let them see it.',
+              'No engagement is ordered. The swarm overflies two installations in a deliberate ' +
+              'pattern, loiters, and withdraws along its entry route. The result is a complete ' +
+              'intelligence picture of the adversary’s collection priorities — obtained by ' +
+              'permitting that collection to occur.',
             critique: {
               strengths: [
                 'Maximum information at zero risk of firing on a civilian or friendly target.',
@@ -169,12 +171,13 @@ export const nightCrossing: Scenario = {
       id: 'p2-engaged',
       phase: 2,
       phaseLabel: 'PHASE 2 · DAYLIGHT',
-      title: 'What the wreckage says',
+      title: 'The wreckage examined',
       narrative:
-        'By morning the wreckage is recovered. The picture is mixed: most airframes carried ' +
-        'sensors, not warheads, and two bore civilian commercial markings — likely overflown or ' +
-        'spoofed, but the markings are real. The Federation is already broadcasting that you ' +
-        'massacred a harmless civilian survey flight. Your capital wants to know what to say.',
+        'The wreckage is recovered by morning. The assessment is mixed: most airframes carried ' +
+        'sensors rather than munitions, and two bore civilian commercial markings — assessed as ' +
+        'likely spoofed, though the markings themselves are genuine. The Federation is already ' +
+        'asserting that Verlandia destroyed a harmless civilian survey flight. The capital requires ' +
+        'a public position.',
       decision: {
         prompt: 'The shoot-down is done and the story is contested. How do you handle the morning?',
         options: [
@@ -268,13 +271,14 @@ export const nightCrossing: Scenario = {
       id: 'p2-restraint',
       phase: 2,
       phaseLabel: 'PHASE 2 · DAYLIGHT',
-      title: 'You held — now what?',
+      title: 'Restraint held — exploiting the result',
       narrative:
-        'No one died and the frontier is quiet, but the swarm did what it came to do: it tested ' +
-        'you and read your sector. Recovered or recorded, you now have a strong intelligence ' +
-        'picture of its origin — and a domestic press asking why the army let foreign drones ' +
-        'wander over the border unscathed. The capital wants a posture for tonight, because there ' +
-        'will be a tonight.',
+        'There were no casualties and the frontier is quiet, but the incursion achieved its ' +
+        'purpose: it tested the response and mapped the sector. Through recovered airframes or ' +
+        'recorded tracks, a strong intelligence picture of the swarm’s origin is now available. ' +
+        'Domestically, however, questions are being raised as to why foreign systems were permitted ' +
+        'to overfly the border without engagement. The capital requires a posture for the nights ' +
+        'that follow, a repeat being likely.',
       decision: {
         prompt: 'You showed restraint and kept the evidence. How do you convert it?',
         options: [
@@ -336,9 +340,10 @@ export const nightCrossing: Scenario = {
             id: 'harden-quiet',
             label: 'Say little; quietly reinforce the sector and tighten ROE for next time.',
             consequence:
-              'You let the political noise wash past and spend the day hardening: more sensors, ' +
-              'clearer counter-UAS authorities, crews rehearsed for the next swarm. The press grumbles; ' +
-              'the sector is materially readier by nightfall.',
+              'The political pressure is left to subside while the day is spent on hardening: ' +
+              'additional sensors, clearer counter-UAS authorities, and rehearsal of crews against ' +
+              'a further swarm. The measure attracts criticism, but the sector is materially more ' +
+              'prepared by nightfall.',
             critique: {
               strengths: [
                 'Fixes the actual vulnerability the probe exposed.',

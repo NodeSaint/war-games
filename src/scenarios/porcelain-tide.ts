@@ -32,19 +32,19 @@ export const porcelainTide: Scenario = {
   estPhases: 6,
   role: 'National Security Adviser to the Atlantic Power, senior partner in the Maritime Alliance',
   brief:
-    'At first light, the Continental Republic announced a "customs quarantine" of Meilan — the ' +
-    'island democracy it claims as its own, and the source of the most advanced semiconductors on ' +
-    'Earth. Its coastguard, not its navy, will now "inspect" all shipping bound for the island and ' +
-    'turn back any cargo it deems contraband. There is no declaration of blockade, no declaration ' +
-    'of war: it is dressed as law enforcement within waters the Republic insists are its own. The ' +
-    'effect is a noose. Within hours, hulls are queuing or diverting, insurers are pulling cover, ' +
-    'and the chip supply the world runs on is seizing up.\n\n' +
-    'This is a fait accompli, engineered to sit a hand\'s breadth below the line that would justify ' +
-    'a war neither side openly wants — and to put the burden of firing the first shot on you. ' +
-    'Meilan\'s government is resolute but rattled. Markets are in freefall. Your coalition partners ' +
-    'are already diverging on how far to go. Your principals will look to you within the hour. ' +
-    'The question is not whether to respond, but how to break or out-wait a quarantine without ' +
-    'starting the great-power war it was designed to avoid.',
+    'The Continental Republic has announced a "customs quarantine" of Meilan — the island ' +
+    'democracy it claims as sovereign territory and the source of the most advanced semiconductors ' +
+    'available. Its coastguard, rather than its navy, will inspect all shipping bound for the island ' +
+    'and turn back any cargo assessed to be contraband. There is no declaration of blockade or of ' +
+    'war; the measure is framed as law enforcement within waters the Republic claims as its own. ' +
+    'The practical effect is a blockade. Within hours, shipping is queuing or diverting, insurers ' +
+    'are withdrawing cover, and the global semiconductor supply is contracting.\n\n' +
+    'The action is assessed as a fait accompli, calibrated to remain below the threshold that would ' +
+    'justify a war neither side appears to want, and to place the onus of the first use of force on ' +
+    'the Coalition. Meilan\'s government is resolute but under strain. Markets are falling sharply. ' +
+    'Coalition partners are already diverging on the acceptable level of cost and risk. A decision is ' +
+    'required within the hour. The question is not whether to respond, but how to break or out-wait ' +
+    'the quarantine without precipitating the great-power war it was designed to avoid.',
   objectives: [
     'Break or out-wait a fait accompli without firing the first shot or being read as weak.',
     'Hold the coalition together while partners diverge on cost and risk.',
@@ -66,17 +66,18 @@ export const porcelainTide: Scenario = {
       id: 'p1-quarantine',
       phase: 1,
       phaseLabel: 'PHASE 1 · THE QUARANTINE',
-      title: 'A noose dressed as customs',
+      title: 'A blockade framed as customs enforcement',
       narrative:
-        'The picture is, for once, clear: the Continental Republic has done exactly what it said it ' +
-        'would, and it is doing it with coastguard cutters and a fishing-fleet "militia", not grey ' +
-        'hulls. Two cargo vessels have already been turned back. A liquefied-gas tanker bound for ' +
-        'Meilan is hove-to, awaiting "inspection". The legal theatre is deliberate — every move is ' +
-        'choreographed to look like a sovereign state policing its own customs, and to make any ' +
-        'Coalition warship that intervenes the visible aggressor.\n\n' +
-        'Meilan can hold for weeks on stockpiles, not months. The global semiconductor supply it ' +
-        'anchors is already convulsing the markets. Your first move sets the frame — challenger of ' +
-        'an illegal blockade, or builder of a wall of pressure — for everything that follows.',
+        'The intelligence picture is unusually clear. The Continental Republic is implementing the ' +
+        'announced measure with coastguard cutters and a maritime "militia" of fishing vessels, not ' +
+        'naval combatants. Two cargo vessels have been turned back. A liquefied-gas tanker bound for ' +
+        'Meilan is hove-to, awaiting inspection. The legal framing is deliberate: each action is ' +
+        'presented as a sovereign state policing its own customs, with the intent of casting any ' +
+        'intervening Coalition warship as the aggressor.\n\n' +
+        'Meilan can sustain itself on stockpiles for weeks, not months. The global semiconductor ' +
+        'supply it anchors is already destabilising markets. Your first move sets the frame for what ' +
+        'follows — whether the Coalition presents as the challenger of an unlawful blockade or as the ' +
+        'architect of graduated pressure.',
       decision: {
         prompt: 'How does the Coalition respond in the first hours?',
         options: [
@@ -86,25 +87,26 @@ export const porcelainTide: Scenario = {
               'Challenge it at sea: announce Coalition-escorted shipping will sail to Meilan through the "quarantine".',
             consequence:
               'You declare that lawful commerce will be escorted to Meilan and that the Coalition ' +
-              'does not recognise the quarantine. A destroyer group turns toward the strait. Meilan ' +
-              'is heartened, your hardliners cheer — and the Republic now has exactly the confrontation ' +
-              'at sea it has been daring you to start.',
+              'does not recognise the quarantine. A destroyer group is directed toward the strait. ' +
+              'Meilan is reassured and domestic hardliners are satisfied. The Republic now has the ' +
+              'maritime confrontation it has been seeking to provoke.',
             critique: {
               strengths: [
                 'Refuses the fait accompli directly rather than legitimising it by working around it.',
                 'Demonstrates resolve to Meilan, allies and the adversary in the one currency — presence — they cannot ignore.',
               ],
               risks: [
-                'Puts your hulls and the burden of the first shot onto the contested water, exactly as the quarantine was designed to do.',
-                'A coastguard "inspection" of an escorted hull becomes a great-power incident with no script for what comes next.',
+                'Places your vessels, and the onus of first use of force, on the contested water — precisely the outcome the quarantine was designed to engineer.',
+                'A coastguard inspection of an escorted hull becomes a great-power incident with no agreed sequence for managing it.',
               ],
               whyChosen:
-                'A leader who believes a fait accompli unanswered becomes a precedent answers it at ' +
-                'the point of imposition, betting that visible resolve deters the next slice.',
+                'A leader who judges that an unanswered fait accompli becomes a precedent contests it ' +
+                'at the point of imposition, assessing that demonstrated resolve deters the next ' +
+                'increment.',
               doctrine:
-                'The defender\'s dilemma against a fait accompli: the aggressor shifts the onus of ' +
-                'escalation onto you, so that breaking the accomplished fact means firing first. ' +
-                'Challenging at sea takes that burden head-on.',
+                'The defender\'s dilemma against a fait accompli: the initiating party shifts the onus ' +
+                'of escalation onto the defender, such that reversing the accomplished fact requires ' +
+                'the first use of force. A direct maritime challenge accepts that burden explicitly.',
             },
             effects: { credibility: 10, escalation: 14, forcesRisk: 14, domestic: 4, cohesion: -4 },
             styleTags: ['forceful', 'decisive', 'escalatory', 'sovereign-action'],
@@ -116,25 +118,26 @@ export const porcelainTide: Scenario = {
               'Surge military posture short of contact: mass the fleet, raise readiness, deter without entering the cordon.',
             consequence:
               'You move carriers and aircraft into the theatre and raise readiness across the ' +
-              'alliance, while ordering your hulls to hold outside the quarantine line — a wall of ' +
-              'force just over the horizon. The signal is unmistakable. So is the fact that you have ' +
-              'not, yet, touched the noose around Meilan.',
+              'alliance, while ordering your vessels to hold outside the quarantine line. The ' +
+              'deterrent signal is clear. So too is the fact that the cordon around Meilan remains ' +
+              'untouched.',
             critique: {
               strengths: [
                 'Generates maximum deterrent signal while keeping the first-shot decision in your own hands.',
                 'Buys time and options without conceding the quarantine or triggering an incident inside it.',
               ],
               risks: [
-                'Posture that never touches the cordon can be read as a bluff, letting the quarantine bite while you watch.',
-                'A large force massed and idle invites the adversary to test where its actual red line sits.',
+                'A posture that never contacts the cordon may be read as a bluff, allowing the quarantine to take effect unopposed.',
+                'A large force held idle may invite the adversary to test the location of the actual red line.',
               ],
               whyChosen:
-                'A leader who wants resolve without a tripwire masses force to deter further moves ' +
-                'while preserving the choice of whether and when to break the cordon.',
+                'A leader seeking to demonstrate resolve without creating a tripwire masses force to ' +
+                'deter further moves while retaining the decision over whether and when to contest the ' +
+                'cordon.',
               doctrine:
-                'Deterrence by visible capability and the credibility-resolve gap: massing force ' +
-                'signals you could break the quarantine, but a threat you decline to execute can ' +
-                'corrode the very resolve it is meant to project.',
+                'Deterrence by visible capability and the credibility-resolve gap: massed force ' +
+                'signals the capacity to break the quarantine, but a threat that is not executed can ' +
+                'erode the very resolve it is intended to project.',
             },
             effects: { credibility: 8, escalation: 8, forcesRisk: 8, cohesion: 2 },
             styleTags: ['forceful', 'coercive', 'decisive', 'signalling'],
@@ -145,27 +148,29 @@ export const porcelainTide: Scenario = {
             label:
               'Rally economic and diplomatic coalition pressure: sanctions threat, legal condemnation, a united wall.',
             consequence:
-              'You hold the warships back and instead spend the first hours assembling the broadest ' +
-              'possible front — a joint condemnation, a credible sanctions package readied, the ' +
-              'quarantine\'s illegality argued in every forum. It is slower than a fleet, and the ' +
-              'cordon keeps tightening while you build — but you are building the one thing the ' +
-              'adversary cannot easily shrug off: a united economic bloc.',
+              'You hold the warships back and use the first hours to assemble the broadest possible ' +
+              'front: a joint condemnation, a credible sanctions package prepared, and the ' +
+              'quarantine\'s illegality argued in every available forum. This is slower than a naval ' +
+              'response, and the cordon continues to tighten while the bloc is assembled. It also ' +
+              'builds the one instrument the adversary cannot easily discount: a unified economic ' +
+              'bloc.',
             critique: {
               strengths: [
                 'Plays to the Coalition\'s real comparative advantage — collective economic and diplomatic weight.',
                 'Keeps the first-shot burden off your forces and the moral framing squarely on the Republic.',
               ],
               risks: [
-                'Coalition consensus is slow, and the quarantine is fast; Meilan\'s stockpiles drain while you negotiate the wording.',
-                'Pressure that never bites can let the adversary pocket the fait accompli and wait you out.',
+                'Coalition consensus is slow while the quarantine is fast; Meilan\'s stockpiles deplete during the negotiation of common positions.',
+                'Pressure that does not impose cost may allow the adversary to consolidate the fait accompli and out-wait the Coalition.',
               ],
               whyChosen:
-                'A leader who judges that the Coalition wins a long game on economics, not a short ' +
-                'one on hulls, invests first in the bloc that makes every later move heavier.',
+                'A leader who assesses that the Coalition prevails in a protracted economic contest ' +
+                'rather than a short maritime one invests first in the bloc that increases the weight ' +
+                'of every subsequent measure.',
               doctrine:
-                'Coercion through collective economic statecraft and audience-building: turning a ' +
-                'fait accompli into a contest of resolve fought with interdependence rather than ' +
-                'gunfire, where breadth of coalition is the coin.',
+                'Coercion through collective economic statecraft and coalition-building: converting a ' +
+                'fait accompli into a contest of resolve conducted through interdependence rather than ' +
+                'force, in which the breadth of the coalition is the principal source of leverage.',
             },
             effects: { cohesion: 12, escalation: -4, credibility: -2, domestic: -2, attribution: 2 },
             styleTags: ['multilateral', 'consultative', 'alliance-first', 'restraint'],
@@ -176,24 +181,24 @@ export const porcelainTide: Scenario = {
             label:
               'Avoid the tripwire entirely: route around the cordon, backstop Meilan quietly, play a long economic game.',
             consequence:
-              'You decline the confrontation the quarantine was built to provoke. Instead you ' +
-              'organise covert and neutral-flagged resupply, surge chip stockpiles and alternative ' +
-              'fabrication abroad, and signal privately that you will simply outlast the cordon. No ' +
-              'fleet sails into the strait. Critics call it surrender; you call it refusing to play ' +
-              'the adversary\'s game on the adversary\'s board.',
+              'You decline the confrontation the quarantine was designed to provoke. Instead you ' +
+              'organise covert and neutral-flagged resupply, build chip stockpiles and alternative ' +
+              'fabrication capacity abroad, and signal privately an intention to outlast the cordon. ' +
+              'No fleet enters the strait. Critics characterise the choice as capitulation; the ' +
+              'rationale is a refusal to contest on the adversary\'s preferred terms.',
             critique: {
               strengths: [
                 'Denies the adversary the incident it engineered the quarantine to obtain.',
                 'Shifts the contest onto economic endurance, where time and a global economy may favour the Coalition.',
               ],
               risks: [
-                'Working around the cordon tacitly concedes it, and a fait accompli left standing tends to become the new map.',
-                'Meilan and allies may read the absence of a fleet as abandonment, fracturing resolve where it matters most.',
+                'Routing around the cordon tacitly concedes it, and a fait accompli left standing tends to become the established position.',
+                'Meilan and allies may interpret the absence of a naval response as abandonment, fracturing resolve where it is most consequential.',
               ],
               whyChosen:
-                'A leader whose dominant fear is a great-power war begun by accident refuses the ' +
-                'tripwire and bets that patience and economic depth break the quarantine more safely ' +
-                'than steel.',
+                'A leader whose principal concern is an inadvertent great-power war declines the ' +
+                'tripwire and assesses that patience and economic depth lift the quarantine at lower ' +
+                'risk than the use of force.',
               doctrine:
                 'Horizontal de-escalation and the politics of accommodation: declining the ' +
                 'adversary\'s chosen battlespace to compete on endurance — at the risk that an ' +
@@ -212,15 +217,15 @@ export const porcelainTide: Scenario = {
       id: 'p2-challenge',
       phase: 2,
       phaseLabel: 'PHASE 2 · THE CORDON',
-      title: 'Steel meets the line',
+      title: 'Forces in contact at the line',
       narrative:
-        'Your forces are now nose-to-nose with the quarantine. A Coalition destroyer is shadowing a ' +
-        'neutral-flagged container ship toward Meilan; a Republic coastguard cutter and a swarm of ' +
-        '"fishing" hulls are forming up to inspect it. The Republic is broadcasting on every channel ' +
-        'that it is merely policing its waters and that any Coalition interference is an act of ' +
-        'aggression. Your captain is asking, plainly, what he is to do when the cutter signals the ' +
-        'container ship to stop. The next order may be the most consequential of the crisis — and ' +
-        'it has to be given in minutes, not hours.',
+        'Coalition forces are now in close contact with the quarantine. A Coalition destroyer is ' +
+        'escorting a neutral-flagged container ship toward Meilan; a Republic coastguard cutter and ' +
+        'a number of militia fishing vessels are forming up to inspect it. The Republic is asserting ' +
+        'across all channels that it is policing its own waters and that any Coalition interference ' +
+        'constitutes aggression. The destroyer\'s commanding officer requires direction for the point ' +
+        'at which the cutter signals the container ship to stop. The order is consequential and must ' +
+        'be issued within minutes.',
       decision: {
         prompt: 'The cutter is moving to board an escorted hull. What order do you give?',
         options: [
@@ -229,26 +234,28 @@ export const porcelainTide: Scenario = {
             label:
               'Interpose without firing: place the warship between cutter and cargo, refuse the boarding, hold position.',
             consequence:
-              'Your destroyer slides between the cutter and the container ship and signals that the ' +
-              'inspection will not proceed. The cutter sheers off rather than ram a warship. The ' +
-              'cargo sails on to Meilan. You have broken one slice of the quarantine without a shot ' +
-              '— and shown that the Republic, too, is unwilling to fire first.',
+              'The destroyer positions itself between the cutter and the container ship and signals ' +
+              'that the inspection will not proceed. The cutter breaks off rather than collide with a ' +
+              'warship. The cargo continues to Meilan. One increment of the quarantine has been ' +
+              'reversed without weapons fire, demonstrating that the Republic is likewise unwilling to ' +
+              'fire first.',
             critique: {
               strengths: [
-                'Calls the fait accompli\'s bluff at the tactical level, exposing the adversary\'s own reluctance to fire first.',
-                'Breaks the cordon by presence and nerve rather than by force, keeping you on the legal and moral high ground.',
+                'Tests the fait accompli at the tactical level, exposing the adversary\'s own reluctance to fire first.',
+                'Reverses the cordon through presence rather than force, retaining the legal and normative advantage.',
               ],
               risks: [
-                'A misjudged manoeuvre at close quarters — a collision, a panicked crew — turns a standoff into a casus belli no one ordered.',
-                'It works until it doesn\'t: the adversary can escalate the next encounter to call your bluff in turn.',
+                'A misjudged close-quarters manoeuvre — a collision or an error by a crew under stress — can convert a standoff into an unintended casus belli.',
+                'The approach holds only conditionally: the adversary may escalate a subsequent encounter to test Coalition resolve in turn.',
               ],
               whyChosen:
-                'A leader who reads the quarantine as coercion that depends on your blinking refuses ' +
-                'to blink, using disciplined presence to break it without handing over the first shot.',
+                'A leader who assesses the quarantine as coercion contingent on the defender yielding ' +
+                'declines to yield, using disciplined presence to reverse it without conceding the ' +
+                'first use of force.',
               doctrine:
-                'Calling a fait accompli at the threshold: chicken-game dynamics where both sides ' +
-                'prefer almost any outcome to firing first, and the side that interposes credibly ' +
-                'without shooting can unwind the accomplished fact.',
+                'Contesting a fait accompli at the threshold: brinkmanship dynamics in which both ' +
+                'parties prefer almost any outcome to firing first, and the party that interposes ' +
+                'credibly without firing can unwind the accomplished fact.',
             },
             effects: { credibility: 12, escalation: 6, forcesRisk: 8, domestic: 6, cohesion: 2 },
             styleTags: ['forceful', 'decisive', 'brinkmanship', 'keep-control'],
@@ -259,23 +266,24 @@ export const porcelainTide: Scenario = {
             label:
               'Permit a face-saving inspection: let the cutter board the neutral hull, but on Coalition-monitored terms.',
             consequence:
-              'You order the destroyer to stand off and let the inspection proceed under your ' +
-              'cameras and your protest, then watch the cleared cargo continue to Meilan. The strait ' +
-              'does not erupt. But the Republic has now inspected a ship under your guns and called ' +
-              'it law enforcement — the quarantine\'s logic survives the encounter intact.',
+              'You order the destroyer to stand off and permit the inspection to proceed under ' +
+              'Coalition observation and formal protest; the cleared cargo then continues to Meilan. ' +
+              'There is no escalation in the strait. The Republic has, however, inspected a vessel in ' +
+              'the presence of a Coalition warship and characterised it as law enforcement, leaving ' +
+              'the quarantine\'s logic intact.',
             critique: {
               strengths: [
-                'Avoids the close-quarters incident that could have started a war neither side chose tonight.',
-                'Keeps cargo flowing to Meilan while denying the adversary a clean confrontation to exploit.',
+                'Avoids the close-quarters incident that could have initiated a war neither side intended.',
+                'Maintains the flow of cargo to Meilan while denying the adversary a clean confrontation to exploit.',
               ],
               risks: [
-                'Tolerating one inspection ratifies the quarantine\'s premise and invites a tighter one tomorrow.',
-                'Meilan and hardliners read a warship standing aside as the Coalition flinching first.',
+                'Tolerating a single inspection ratifies the quarantine\'s premise and lowers the threshold for a more restrictive one.',
+                'Meilan and domestic hardliners may interpret a warship standing aside as the Coalition conceding first.',
               ],
               whyChosen:
-                'A leader who fears that the first incident is the one that cannot be undone trades a ' +
-                'point of principle for a night without a shooting war, betting the cargo matters more ' +
-                'than the precedent.',
+                'A leader who judges that the first incident is the one that cannot be reversed trades ' +
+                'a point of principle for the avoidance of armed conflict, assessing the cargo as more ' +
+                'important than the precedent.',
               doctrine:
                 'Salami-tactics and the slippery slope of accommodation: conceding a thin slice to ' +
                 'avoid escalation can validate the coercive frame and lower the threshold for the next slice.',
@@ -289,23 +297,23 @@ export const porcelainTide: Scenario = {
             label:
               'Authorise warning shots and a hard turn-away: make clear the boarding will be physically prevented.',
             consequence:
-              'Your warship fires across the cutter\'s bow and signals it will not permit the ' +
-              'boarding by any means. The cutter holds, then withdraws — but a Republic frigate is ' +
-              'now steaming hard for the strait, and state media is broadcasting that the Coalition ' +
-              'has opened fire on a coastguard policing its own waters. You have won the encounter ' +
-              'and handed the adversary its first-shot narrative.',
+              'The warship fires across the cutter\'s bow and signals that it will prevent the ' +
+              'boarding by any means. The cutter holds, then withdraws. A Republic frigate is now ' +
+              'transiting toward the strait, and Republic state media is asserting that the Coalition ' +
+              'has opened fire on a coastguard policing its own waters. The encounter has been won ' +
+              'tactically at the cost of supplying the adversary its first-shot narrative.',
             critique: {
               strengths: [
                 'Removes all ambiguity that the cordon will be broken, restoring deterrence in the clearest terms.',
                 'Forces the adversary to choose between backing off and a kinetic escalation it claims not to want.',
               ],
               risks: [
-                'You have given the Republic, on a plate, the "Coalition fired first" narrative the quarantine was built to extract.',
-                'Bringing grey hulls into a coastguard standoff couples the navies directly, with no easy rung back down.',
+                'Supplies the Republic with the "Coalition fired first" narrative the quarantine was constructed to extract.',
+                'Introducing naval combatants into a coastguard standoff couples the two navies directly, with no straightforward de-escalation path.',
               ],
               whyChosen:
-                'A leader who believes only unmistakable force deters a salami-slicer chooses to ' +
-                'demonstrate it now, accepting the narrative cost to stop the precedent cold.',
+                'A leader who judges that only unambiguous force deters incremental coercion elects to ' +
+                'demonstrate it now, accepting the narrative cost in order to arrest the precedent.',
               doctrine:
                 'Vertical escalation to restore deterrence and the audience-cost trap: firing to ' +
                 'prove resolve can succeed tactically while ceding the legitimacy contest, since the ' +
@@ -324,15 +332,15 @@ export const porcelainTide: Scenario = {
       id: 'p2-coalition',
       phase: 2,
       phaseLabel: 'PHASE 2 · THE WALL',
-      title: 'Building the bloc while the clock runs',
+      title: 'Assembling the bloc under time pressure',
       narrative:
-        'You have chosen weight over speed, and the bill is coming due in both directions. On one ' +
-        'side, you are assembling the broadest economic front you can — but partners diverge. Two ' +
-        'depend on the Republic\'s market and want a soft line; one, exposed to the chip shortage, ' +
-        'wants the cordon broken yesterday. On the other side, Meilan\'s stockpiles are draining and ' +
-        'its government is asking, pointedly, whether the Coalition intends to do anything that ' +
-        'reaches the water. The wall you are building is real — but a wall does not, by itself, lift ' +
-        'a noose.',
+        'You have prioritised weight over speed, and the costs are accumulating on both sides. The ' +
+        'Coalition is assembling the broadest economic front available, but partners diverge: two ' +
+        'depend on the Republic\'s market and favour a moderate line; one, heavily exposed to the ' +
+        'chip shortage, presses for the cordon to be broken immediately. Meanwhile Meilan\'s ' +
+        'stockpiles are depleting, and its government is asking directly whether the Coalition ' +
+        'intends any action at sea. The bloc under construction is substantive, but economic ' +
+        'pressure alone does not lift the blockade.',
       decision: {
         prompt: 'How do you make economic and diplomatic pressure actually bite?',
         options: [
@@ -341,22 +349,24 @@ export const porcelainTide: Scenario = {
             label:
               'Lead with maximal sanctions: cut the Republic from key markets and tech, accept the blowback at home.',
             consequence:
-              'You drive the coalition toward its hardest package — export controls on inputs the ' +
-              'Republic\'s own industry needs, financial measures with teeth. It lands. The Republic\'s ' +
-              'markets shudder too. But your own chip-starved economy and two soft-line partners take ' +
-              'the blast, and the coalition\'s unity, your best card, audibly strains.',
+              'You move the coalition toward its most severe package — export controls on inputs the ' +
+              'Republic\'s industry depends on, and substantive financial measures. The measures take ' +
+              'effect, and the Republic\'s markets are also affected. However, the cost falls heavily ' +
+              'on your own chip-dependent economy and on the two moderate partners, and coalition ' +
+              'unity — the Coalition\'s principal asset — comes under visible strain.',
             critique: {
               strengths: [
                 'Imposes real, immediate cost, converting interdependence into leverage the adversary feels.',
                 'Signals that the fait accompli will not be cost-free, strengthening deterrence against the next one.',
               ],
               risks: [
-                'Interdependence cuts both ways: maximal sanctions detonate on your own economy and your softest allies first.',
-                'Pain you cannot sustain longer than the adversary is leverage that expires before theirs does.',
+                'Interdependence is reciprocal: maximal sanctions impose cost on your own economy and your most exposed allies first.',
+                'Costs the Coalition cannot sustain longer than the adversary constitute leverage that expires before the adversary\'s does.',
               ],
               whyChosen:
-                'A leader who believes coercion only works when it hurts now reaches for the package ' +
-                'with real teeth, betting that shared pain favours the bloc with the deeper economy.',
+                'A leader who assesses that coercion is effective only when cost is immediate selects ' +
+                'the package with real effect, judging that shared cost favours the bloc with the ' +
+                'deeper economy.',
               doctrine:
                 'Economic interdependence as a weapon and the vulnerability-asymmetry question: ' +
                 'sanctions coerce only if you can endure the reciprocal damage longer than the target — ' +
@@ -371,24 +381,24 @@ export const porcelainTide: Scenario = {
             label:
               'Calibrate the squeeze: phased, reversible measures tied to explicit demands, with off-ramps built in.',
             consequence:
-              'You assemble a graduated package — a first tranche now, more held in reserve, each ' +
-              'tier linked to a specific ask and each reversible if the cordon lifts. It bites less ' +
-              'today but it holds the coalition together and gives the Republic a way to climb down ' +
-              'without losing face. The quarantine does not lift, but its architects now see a priced ' +
-              'menu of consequences stretching ahead of them.',
+              'You assemble a graduated package: a first tranche now, further measures held in ' +
+              'reserve, each tier linked to a specific demand and each reversible if the cordon is ' +
+              'lifted. The immediate effect is smaller, but the approach holds the coalition together ' +
+              'and gives the Republic a means of de-escalating without loss of face. The quarantine ' +
+              'remains in place, but its architects now face a defined and escalating schedule of ' +
+              'consequences.',
             critique: {
               strengths: [
                 'Keeps the coalition aboard by spreading cost and pacing escalation to its weakest member\'s tolerance.',
                 'Builds in off-ramps so pressure can buy a settlement rather than only punish.',
               ],
               risks: [
-                'Calibrated pressure can read as a coalition that will not truly hurt itself, inviting the adversary to wait it out.',
-                'Phased measures give the Republic time to harden, adapt and divide your partners between tiers.',
+                'Calibrated pressure may signal a coalition unwilling to accept significant cost, encouraging the adversary to out-wait it.',
+                'Phased measures afford the Republic time to harden, adapt, and divide partners across the tiers.',
               ],
               whyChosen:
-                'A leader who treats the coalition\'s cohesion as the centre of gravity prices the ' +
-                'pressure to what the bloc can sustain, trading immediate bite for a wall that does ' +
-                'not crack.',
+                'A leader who treats coalition cohesion as the centre of gravity calibrates the ' +
+                'pressure to what the bloc can sustain, trading immediate effect for durability.',
               doctrine:
                 'Graduated coercion and signalling resolve through reversibility: a priced, escalatory ' +
                 'menu that preserves alliance cohesion and leaves the adversary a face-saving exit — ' +
@@ -403,23 +413,25 @@ export const porcelainTide: Scenario = {
             label:
               'Play the chip card: coordinate with Meilan to weaponise its fabrication dominance against the Republic.',
             consequence:
-              'You and Meilan agree, quietly, to choke the flow of advanced chips and tooling to the ' +
-              'Republic\'s own industries — turning the island\'s indispensability into a counter-noose. ' +
-              'It is the one pressure the Republic genuinely fears. It also makes Meilan a primary ' +
-              'economic combatant, raises the stakes for everyone dependent on those chips, and dares ' +
-              'the Republic to grab the fabs before they go dark.',
+              'You and Meilan agree privately to restrict the flow of advanced chips and ' +
+              'manufacturing equipment to the Republic\'s industries, converting the island\'s ' +
+              'indispensability into reciprocal leverage. This is the form of pressure the Republic ' +
+              'most fears. It also makes Meilan a primary economic combatant, raises the stakes for ' +
+              'all parties dependent on those chips, and creates an incentive for the Republic to ' +
+              'seize the fabrication facilities before they are taken offline.',
             critique: {
               strengths: [
-                'Wields the single most asymmetric lever in the crisis — Meilan\'s fabrication monopoly — directly against the aggressor.',
-                'Reframes the quarantine as a two-way strangulation in which the Republic also has a great deal to lose.',
+                'Applies the most asymmetric lever in the crisis — Meilan\'s near-monopoly on advanced fabrication — directly against the initiating party.',
+                'Reframes the quarantine as a two-way restriction in which the Republic also stands to lose substantially.',
               ],
               risks: [
-                'Threatening to deny the fabs can convert a quarantine into a motive for seizure — "use it before you lose it".',
-                'Weaponising the chip supply detonates the global economy you share, and your own market and partners feel it first.',
+                'Threatening to deny the fabrication facilities can convert a quarantine into an incentive for seizure under "use it before you lose it" logic.',
+                'Restricting the chip supply imposes cost on the shared global economy, and on the Coalition\'s own market and partners first.',
               ],
               whyChosen:
-                'A leader who sees that the Coalition\'s decisive card is Meilan\'s irreplaceability ' +
-                'plays it to make the Republic\'s coercion recoil on its own industrial base.',
+                'A leader who assesses that the Coalition\'s decisive advantage is Meilan\'s ' +
+                'irreplaceability applies it so that the Republic\'s coercion recoils on its own ' +
+                'industrial base.',
               doctrine:
                 'Weaponised interdependence and the security dilemma of indispensable assets: turning ' +
                 'a chokepoint resource into leverage can also raise its value as a target, pushing the ' +
@@ -438,40 +450,42 @@ export const porcelainTide: Scenario = {
       id: 'p3-tighten',
       phase: 3,
       phaseLabel: 'PHASE 3 · THE TIGHTENING',
-      title: 'The screw turns',
+      title: 'The cordon tightens',
       narrative:
-        'However you arrived here, the Republic answers your move by tightening, not loosening. It ' +
-        'extends the quarantine to cover energy and "dual-use" cargo — which now includes most of ' +
-        'what Meilan needs to keep its fabs running — and it moves grey hulls behind the coastguard ' +
-        'screen for the first time. Then the incident you have been dreading: a Coalition-flagged ' +
-        'tanker, ordered to stop, refuses; a Republic cutter rams it; there are injuries, oil on the ' +
-        'water, and footage already everywhere. Both capitals are blaming the other. Meilan\'s ' +
-        'stockpile clock has weeks left, not many. Your principals need a posture before the ' +
-        'markets reopen.',
+        'Whatever the route to this point, the Republic responds by tightening rather than easing the ' +
+        'measure. It extends the quarantine to cover energy and dual-use cargo — now including most ' +
+        'of what Meilan requires to keep its fabrication facilities operating — and, for the first ' +
+        'time, positions naval combatants behind the coastguard screen. An incident then occurs: a ' +
+        'Coalition-flagged tanker, ordered to stop, refuses; a Republic cutter collides with it; ' +
+        'there are injuries, an oil spill, and footage already in wide circulation. Both capitals ' +
+        'are attributing fault to the other. Meilan\'s stockpiles have weeks remaining. A posture is ' +
+        'required before markets reopen.',
       decision: {
-        prompt: 'The cordon has tightened and blood is in the water. What posture do you set now?',
+        prompt: 'The cordon has tightened and an incident has occurred. What posture do you set now?',
         options: [
           {
             id: 'break-cordon',
             label:
               'Break the cordon: declare the quarantine void and run a protected convoy through, by force if challenged.',
             consequence:
-              'You announce the Coalition will escort a relief convoy to Meilan and will defend it. ' +
-              'Warships, supply hulls and air cover form up. It is the boldest possible answer to the ' +
-              'tightening — and it puts a Coalition convoy and Republic grey hulls on a converging ' +
-              'course where the next misstep is a shooting engagement between great powers.',
+              'You announce that the Coalition will escort and defend a relief convoy to Meilan. ' +
+              'Warships, supply vessels and air cover assemble. This is the strongest available ' +
+              'response to the tightening, and it places a Coalition convoy and Republic naval ' +
+              'combatants on a converging course in which a further misstep produces an armed ' +
+              'engagement between great powers.',
             critique: {
               strengths: [
-                'Decisively rejects the fait accompli and relieves Meilan before its stockpiles bite, restoring deterrence and resolve.',
-                'Seizes the initiative after a tightening designed to make you look passive.',
+                'Rejects the fait accompli unambiguously and relieves Meilan before its stockpiles are exhausted, restoring deterrence and resolve.',
+                'Recovers the initiative after a tightening designed to render the Coalition passive.',
               ],
               risks: [
-                'A defended convoy versus a tightened cordon is the likeliest single path to the great-power war both sides claim not to want.',
-                'If a hull is lost, the audience costs on both sides may make climbing back down politically impossible.',
+                'A defended convoy against a tightened cordon is the single most likely path to the great-power war both sides claim not to want.',
+                'Should a vessel be lost, audience costs on both sides may make de-escalation politically unfeasible.',
               ],
               whyChosen:
-                'A leader who concludes that each tightening rewards passivity decides the cordon ' +
-                'must be physically broken now, while Meilan can still be saved and resolve still means something.',
+                'A leader who concludes that each tightening rewards passivity judges that the cordon ' +
+                'must be reversed by force now, while Meilan can still be relieved and resolve retains ' +
+                'meaning.',
               doctrine:
                 'Compellence by force and the convoy gambit: directly reversing an accomplished fact ' +
                 'through protected resupply, accepting a high risk of inadvertent escalation to deny ' +
@@ -486,10 +500,10 @@ export const porcelainTide: Scenario = {
             label:
               'Go horizontal: leave the cordon alone, but impose costs elsewhere — sanctions, lawfare, and pressure on the Republic\'s own chokepoints.',
             consequence:
-              'Rather than meet the tightening at the strait, you widen the board: a sharper ' +
-              'sanctions tranche, an international legal case over the rammed tanker, and quiet ' +
-              'pressure on a sea lane the Republic itself depends on. The cordon stays up — but the ' +
-              'Republic now feels the squeeze in places it did not choose to fight, without a ' +
+              'Rather than meet the tightening at the strait, you widen the contest: a sharper ' +
+              'sanctions tranche, an international legal case over the tanker collision, and quiet ' +
+              'pressure on a sea lane on which the Republic itself depends. The cordon remains in ' +
+              'place, but the Republic now bears cost in areas it did not choose to contest, without a ' +
               'Coalition shot fired in the strait.',
             critique: {
               strengths: [
@@ -497,12 +511,12 @@ export const porcelainTide: Scenario = {
                 'Exploits the adversary\'s own dependencies, reminding it that it, too, has chokepoints.',
               ],
               risks: [
-                'Horizontal escalation can spread the crisis to new theatres and new actors who never signed up for it.',
-                'It does nothing for Meilan\'s draining stockpiles — pressure elsewhere may not lift the noose in time.',
+                'Horizontal escalation can spread the crisis to new theatres and to actors not previously party to it.',
+                'It does not address Meilan\'s depleting stockpiles; pressure elsewhere may not lift the cordon in time.',
               ],
               whyChosen:
-                'A leader who wants to punish the tightening without a strait engagement shifts the ' +
-                'contest to ground where the Coalition holds the advantage and the tripwire is absent.',
+                'A leader seeking to impose cost for the tightening without a strait engagement shifts ' +
+                'the contest to ground where the Coalition holds the advantage and no tripwire exists.',
               doctrine:
                 'Horizontal versus vertical escalation: answering a move up the ladder by widening ' +
                 'the conflict laterally to where you are stronger, trading the risk of a wider crisis ' +
@@ -517,24 +531,24 @@ export const porcelainTide: Scenario = {
             label:
               'Internationalise the incident: demand a neutral inquiry into the ramming and a humanitarian corridor for Meilan.',
             consequence:
-              'You take the rammed tanker to every forum, demand an independent inquiry, and propose ' +
-              'a monitored humanitarian corridor to keep food, fuel and medicine flowing to Meilan ' +
-              'while the legality is contested. It cedes the strait to the Republic for now, but it ' +
-              'puts the burden of refusing relief to an island\'s civilians squarely on the ' +
-              'quarantine\'s architects.',
+              'You raise the tanker collision in every forum, demand an independent inquiry, and ' +
+              'propose a monitored humanitarian corridor to maintain the flow of food, fuel and ' +
+              'medicine to Meilan while the legality is contested. This cedes the strait to the ' +
+              'Republic for the present, but places the burden of refusing relief to a civilian ' +
+              'population on the quarantine\'s architects.',
             critique: {
               strengths: [
-                'Reframes the crisis from a great-power standoff to the Republic starving a civilian population, where global opinion favours you.',
-                'Opens a face-saving channel — a corridor — that could relieve Meilan without a convoy fight.',
+                'Reframes the crisis from a great-power standoff to the denial of relief to a civilian population, where international opinion favours the Coalition.',
+                'Opens a face-saving channel — a corridor — that could relieve Meilan without an armed convoy operation.',
               ],
               risks: [
-                'Internationalising is slow, and a corridor the Republic can veto may relieve nothing while Meilan drains.',
-                'Leaning on inquiries and corridors can read as substituting process for resolve, denting credibility with Meilan and hardliners.',
+                'Internationalisation is slow, and a corridor the Republic can veto may provide no relief while Meilan\'s stockpiles deplete.',
+                'Reliance on inquiries and corridors may be read as substituting process for resolve, reducing credibility with Meilan and domestic hardliners.',
               ],
               whyChosen:
-                'A leader who wants to break the quarantine\'s legitimacy rather than its hulls turns ' +
-                'the incident into a moral and legal defeat for the Republic and an off-ramp for ' +
-                'everyone.',
+                'A leader seeking to contest the quarantine\'s legitimacy rather than its vessels ' +
+                'converts the incident into a legal and normative reverse for the Republic and an ' +
+                'off-ramp for both sides.',
               doctrine:
                 'Lawfare and legitimacy as instruments of coercion: contesting the fait accompli in ' +
                 'the normative domain and offering a humanitarian off-ramp, accepting slower relief in ' +
@@ -553,39 +567,40 @@ export const porcelainTide: Scenario = {
       id: 'p4-meilan',
       phase: 4,
       phaseLabel: 'PHASE 4 · THE ISLAND\'S NERVE',
-      title: 'The one whose island it is',
+      title: 'Meilan asserts its own position',
       narrative:
-        'You have been managing a crisis over Meilan; now Meilan asserts that it has a vote. Its ' +
-        'leadership conveys two things at once. First, that it will not be a bargaining chip — it ' +
-        'will hold, ration, and if pressed it will deny its fabs to everyone before it surrenders ' +
-        'them. Second, a faction in its government, watching the stockpile clock and the divided ' +
-        'coalition, is privately exploring whether a quiet accommodation with the Republic might be ' +
-        'less ruinous than a war fought over their cities. Whether Meilan stands firm or folds now ' +
-        'depends substantially on what it reads in you. The Republic is watching for the same crack.',
+        'The crisis has been managed largely over Meilan; Meilan now asserts a position of its own. ' +
+        'Its leadership conveys two points. First, that it will not be treated as a bargaining chip: ' +
+        'it will hold, ration, and if pressed will deny its fabrication facilities to all parties ' +
+        'rather than surrender them. Second, a faction within its government, assessing the stockpile ' +
+        'timeline and the divided coalition, is privately exploring whether an accommodation with the ' +
+        'Republic might be less costly than a war fought over its territory. Whether Meilan holds or ' +
+        'concedes now depends substantially on its reading of Coalition resolve. The Republic is ' +
+        'assessing the same indicators.',
       decision: {
-        prompt: 'Meilan\'s resolve is wavering at the edges. How do you shape it?',
+        prompt: 'Meilan\'s resolve is beginning to waver. How do you shape it?',
         options: [
           {
             id: 'iron-guarantee',
             label:
               'Give an iron guarantee: a public, unconditional commitment to Meilan\'s defence and survival.',
             consequence:
-              'You put the Coalition\'s word on the line in the open — Meilan will not be allowed to ' +
-              'fall, full stop. The island\'s resolve stiffens overnight and the accommodation faction ' +
-              'goes quiet. So does any ambiguity that once gave you room: you have now tied your own ' +
-              'credibility, and possibly your forces, to whatever the Republic does next.',
+              'You commit the Coalition publicly: Meilan will not be permitted to fall. The island\'s ' +
+              'resolve consolidates and the accommodation faction is silenced. The strategic ambiguity ' +
+              'that previously preserved freedom of action is also removed; Coalition credibility, and ' +
+              'potentially its forces, are now tied to the Republic\'s next move.',
             critique: {
               strengths: [
                 'Restores Meilan\'s nerve and forecloses the adversary\'s cheapest win — the island negotiating its own surrender.',
                 'Converts wavering extended deterrence into an unambiguous commitment the adversary must now factor in.',
               ],
               risks: [
-                'An unconditional guarantee transfers the decision for war partly to Meilan and the Republic, not you.',
-                'A commitment that outruns what your public will actually sustain is a credibility trap if it is ever called.',
+                'An unconditional guarantee transfers part of the decision for war to Meilan and the Republic rather than the Coalition.',
+                'A commitment that exceeds what the public will sustain becomes a credibility trap if it is ever invoked.',
               ],
               whyChosen:
-                'A leader who knows that extended deterrence lives or dies on credibility removes all ' +
-                'doubt, judging that a wobbling guarantee is worse than none.',
+                'A leader who recognises that extended deterrence depends on credibility removes all ' +
+                'ambiguity, judging an uncertain guarantee worse than none.',
               doctrine:
                 'Extended deterrence and the credibility of commitment: a clear, public guarantee ' +
                 'shores up a protégé\'s resolve and the adversary\'s calculus — but tying your hands ' +
@@ -600,23 +615,23 @@ export const porcelainTide: Scenario = {
             label:
               'Back Meilan conditionally: deep support and resupply, but counsel against irreversible moves with its fabs.',
             consequence:
-              'You commit substantial support — resupply, intelligence, capabilities — while quietly ' +
-              'urging Meilan not to scorch its own fabs or force a decision before the coalition is ' +
-              'ready. The island holds, steadier than before, and keeps the chip card in reserve ' +
-              'rather than burning it. Some in Meilan resent being asked to wait; most are reassured ' +
-              'that they are not being left alone.',
+              'You commit substantial support — resupply, intelligence, capabilities — while ' +
+              'privately urging Meilan not to destroy its own fabrication facilities or force a ' +
+              'decision before the coalition is ready. The island holds, more steadily than before, ' +
+              'and retains the chip lever in reserve rather than expending it. Some in Meilan resent ' +
+              'being asked to wait; most are reassured that they are not being left to act alone.',
             critique: {
               strengths: [
                 'Stiffens resolve while keeping the most escalatory lever — destroying or denying the fabs — under deliberate, joint control.',
                 'Preserves your own freedom of action by stopping short of an unconditional, self-triggering guarantee.',
               ],
               risks: [
-                'Conditional backing can read in Meilan as half-hearted, feeding the very accommodation faction you want to quiet.',
-                'Counselling restraint to the party under the gun can curdle into resentment if relief is slow.',
+                'Conditional backing may be read in Meilan as half-hearted, reinforcing the accommodation faction it is intended to quiet.',
+                'Counselling restraint to the party most exposed can generate resentment if relief is slow.',
               ],
               whyChosen:
-                'A leader who wants to hold Meilan firm without forfeiting escalation control offers ' +
-                'depth of support in exchange for a say over the island\'s most irreversible moves.',
+                'A leader seeking to hold Meilan firm without forfeiting escalation control offers ' +
+                'depth of support in exchange for a say over the island\'s most irreversible options.',
               doctrine:
                 'Calibrated extended deterrence and protégé moral hazard: backing an ally enough to ' +
                 'hold its nerve while restraining it from steps — like denying the fabs — that could ' +
@@ -631,23 +646,23 @@ export const porcelainTide: Scenario = {
             label:
               'Let Meilan set the line: defer to the island\'s own threshold, support whatever it decides, including accommodation.',
             consequence:
-              'You tell Meilan the Coalition will follow its lead — fight if it chooses to fight, ' +
-              'cover a settlement if it chooses to settle. It is the most respectful of the island\'s ' +
-              'agency and the least likely to drag anyone into a war Meilan does not want. It also ' +
-              'signals to the Republic that the Coalition\'s commitment has a seam, and that patience ' +
-              'might split the island from its patrons.',
+              'You inform Meilan that the Coalition will follow its lead — supporting a fight if it ' +
+              'chooses to fight, and a settlement if it chooses to settle. This most fully respects ' +
+              'the island\'s agency and is least likely to draw any party into a war Meilan does not ' +
+              'want. It also signals to the Republic that the Coalition\'s commitment is conditional, ' +
+              'and that patience may separate the island from its partners.',
             critique: {
               strengths: [
                 'Honours the principle that the people whose island it is should decide their own fate.',
                 'Avoids the moral hazard of a patron fighting a war its protégé would not choose.',
               ],
               risks: [
-                'Visible deference can read as a green light for accommodation, handing the Republic a bloodless win through coercion.',
-                'Signalling a seam in the guarantee weakens deterrence everywhere your word is supposed to hold.',
+                'Visible deference may be read as endorsement of accommodation, affording the Republic a win through coercion without conflict.',
+                'Signalling a conditional guarantee weakens deterrence wherever the Coalition\'s commitment is meant to hold.',
               ],
               whyChosen:
-                'A leader wary of fighting someone else\'s war on someone else\'s timetable puts the ' +
-                'decision where the cost falls heaviest — with Meilan itself.',
+                'A leader reluctant to fight a protégé\'s war on the protégé\'s timetable locates the ' +
+                'decision where the cost falls most heavily — with Meilan itself.',
               doctrine:
                 'Agency of the protégé and the limits of extended deterrence: deferring to the ' +
                 'defended party\'s threshold respects sovereignty but can erode the credibility on ' +
@@ -666,42 +681,43 @@ export const porcelainTide: Scenario = {
       id: 'p5-crossroads',
       phase: 5,
       phaseLabel: 'PHASE 5 · THE CROSSROADS',
-      title: 'Up or down',
+      title: 'Escalate or accommodate',
       narrative:
-        'The crisis has reached its hinge. Through a trusted intermediary the Republic floats a ' +
-        'deal: it will quietly fold the "quarantine" back into routine, intermittent "inspections" ' +
-        '— preserving its legal claim and its face — if the Coalition will accept that framing, ' +
-        'stand its convoy down, and ease the sanctions. It is an off-ramp that lets cargo reach ' +
-        'Meilan again while leaving the Republic\'s precedent partly standing. At the same moment, ' +
-        'your own military judges that a single decisive show of force now — a full convoy run, or a ' +
+        'The crisis has reached its decisive point. Through a trusted intermediary the Republic ' +
+        'proposes a settlement: it will quietly revert the quarantine to routine, intermittent ' +
+        'inspections — preserving its legal claim and its position — if the Coalition accepts that ' +
+        'framing, stands down its convoy, and eases the sanctions. This is an off-ramp that restores ' +
+        'cargo flow to Meilan while leaving the Republic\'s precedent partly intact. Concurrently, ' +
+        'your military assesses that a single decisive show of force now — a full convoy run, or a ' +
         'demonstrative strike on the cordon — could break the quarantine outright while the Republic ' +
-        'is still uncertain of your resolve. The window for either is hours. This is the decisive ' +
-        'choice of the crisis.',
+        'remains uncertain of Coalition resolve. The window for either option is measured in hours. ' +
+        'This is the decisive choice of the crisis.',
       decision: {
-        prompt: 'The hinge of the crisis. Do you escalate to break it, accommodate to end it, or thread the needle?',
+        prompt: 'The decisive choice. Do you escalate to break the cordon, accommodate to end the crisis, or combine pressure with negotiation?',
         options: [
           {
             id: 'decisive-force',
             label:
               'Escalate decisively: run the full convoy and break the cordon now, betting resolve ends it on your terms.',
             consequence:
-              'You commit to the decisive move while the Republic is still reading you. The convoy ' +
-              'sails under full protection; the cordon is challenged at every point at once. For a ' +
-              'few hours the outcome hangs on whether the Republic fires — and on whether, having ' +
-              'tested you, it decides this fait accompli is the one not worth the war it would take ' +
-              'to keep.',
+              'You commit to the decisive move while the Republic is still assessing your resolve. ' +
+              'The convoy sails under full protection; the cordon is contested at every point ' +
+              'simultaneously. For several hours the outcome depends on whether the Republic fires, ' +
+              'and on whether, having tested the Coalition, it judges this fait accompli not worth the ' +
+              'war required to sustain it.',
             critique: {
               strengths: [
                 'Resolves the crisis on your terms if the adversary backs down, ending the quarantine outright rather than freezing it.',
                 'Exploits the adversary\'s uncertainty about your resolve at the exact moment it is highest.',
               ],
               risks: [
-                'If the Republic does not fold, this is the step that converts a quarantine into a great-power war.',
-                'The whole bet rests on reading an adversary\'s resolve correctly under fog — the classic miscalculation that starts wars.',
+                'If the Republic does not concede, this is the step that converts a quarantine into a great-power war.',
+                'The decision rests on correctly reading an adversary\'s resolve under uncertainty — the characteristic miscalculation that initiates wars.',
               ],
               whyChosen:
-                'A leader who judges that the Republic has overreached and is bluffing seizes the ' +
-                'narrow window to end the coercion decisively, before the cordon hardens into the new normal.',
+                'A leader who assesses that the Republic has overreached and is bluffing uses the ' +
+                'narrow window to end the coercion decisively, before the cordon becomes the ' +
+                'established position.',
               doctrine:
                 'Crisis bargaining and the resolve-miscalculation problem: a decisive break can win a ' +
                 'contest of nerve, but it relies on correctly reading an opponent\'s willingness to ' +
@@ -716,23 +732,23 @@ export const porcelainTide: Scenario = {
             label:
               'Accommodate to end it: take the off-ramp — accept the face-saving framing, stand down, restore the flow.',
             consequence:
-              'You take the deal inside the window. The "quarantine" dissolves into intermittent ' +
-              'inspections; your convoy stands down; the sharpest sanctions ease; cargo and chips ' +
-              'flow to Meilan again. No shot is fired, no city burns. The Republic keeps its claim ' +
-              'and a sliver of its precedent — and both sides walk away able to call it something ' +
-              'other than a defeat.',
+              'You accept the settlement within the window. The quarantine reverts to intermittent ' +
+              'inspections; the convoy stands down; the most severe sanctions ease; cargo and chips ' +
+              'flow to Meilan again. No shot is fired. The Republic retains its claim and part of its ' +
+              'precedent, and both sides are able to characterise the outcome as other than a defeat.',
             critique: {
               strengths: [
-                'Ends the acute crisis without a great-power war, restoring the chip flow and Meilan\'s lifeline.',
-                'A mutual face-saver lets the adversary climb down, which is the precondition for any de-escalation actually holding.',
+                'Ends the acute crisis without a great-power war, restoring the chip flow and Meilan\'s supply line.',
+                'A mutual face-saver allows the adversary to de-escalate, which is the precondition for any de-escalation holding.',
               ],
               risks: [
-                'Accepting the framing leaves the precedent partly standing — the next "inspection" regime starts from higher ground.',
-                'A negotiated stand-down can be sold at home and in Meilan as the Coalition blinking, denting credibility for the next test.',
+                'Accepting the framing leaves the precedent partly intact; the next inspection regime begins from a more favourable position for the Republic.',
+                'A negotiated stand-down may be characterised at home and in Meilan as the Coalition conceding, reducing credibility for the next test.',
               ],
               whyChosen:
-                'A leader whose dominant aim is to avoid a war neither side wants takes the verifiable ' +
-                'exit when it appears, judging a managed, imperfect outcome better than a roll of the dice.',
+                'A leader whose primary aim is to avoid a war neither side wants takes the verifiable ' +
+                'exit when available, judging a managed, imperfect outcome preferable to an uncertain ' +
+                'one.',
               doctrine:
                 'Off-ramps, face-saving and the value of a tolerable settlement: ending a fait ' +
                 'accompli short of war usually means leaving the adversary something to call a win — ' +
@@ -747,23 +763,24 @@ export const porcelainTide: Scenario = {
             label:
               'Thread the needle: keep the pressure maxed but accept talks, trading a stand-down only for a verifiable lifting of the cordon.',
             consequence:
-              'You neither break the cordon nor take the offered framing. You hold the convoy poised ' +
-              'and the sanctions biting, but accept the channel — and insist the price of any ' +
-              'Coalition stand-down is a real, verifiable lifting of the quarantine, not a relabelled ' +
-              'one. The Republic grumbles, stalls, and then, with the convoy at the line and the ' +
-              'clock against it, concedes a genuine — if grudging — climb-down.',
+              'You neither break the cordon nor accept the offered framing. You hold the convoy ready ' +
+              'and the sanctions in effect, but accept the channel, and insist that the price of any ' +
+              'Coalition stand-down is a verifiable lifting of the quarantine rather than a relabelled ' +
+              'one. The Republic objects and delays, then, with the convoy at the line and time ' +
+              'running against it, concedes a genuine if reluctant climb-down.',
             critique: {
               strengths: [
                 'Couples coercion with diplomacy, refusing both an avoidable war and a hollow, precedent-preserving deal.',
                 'Demanding verifiable lifting attacks the fait accompli itself, not just its label.',
               ],
               risks: [
-                'Holding maximal pressure while you talk keeps forces in contact, where an incident can still spark the war you are trying to avoid.',
-                'Insisting on verification inside a closing window risks losing the deal to a hardliner or the clock.',
+                'Holding maximal pressure during negotiation keeps forces in contact, where an incident can still initiate the war the approach seeks to avoid.',
+                'Insisting on verification within a closing window risks losing the settlement to a hardliner or to the timeline.',
               ],
               whyChosen:
-                'A leader who wants the substance of victory without the risk of a chosen war keeps ' +
-                'the gun on the table while negotiating, conceding nothing until the cordon genuinely lifts.',
+                'A leader seeking the substance of a favourable outcome without the risk of a chosen ' +
+                'war maintains pressure during negotiation, conceding nothing until the cordon is ' +
+                'genuinely lifted.',
               doctrine:
                 'Coercive diplomacy: the simultaneous use of pressure and a negotiated exit, where the ' +
                 'art is calibrating force to compel a real concession without tipping the standoff into ' +
@@ -782,13 +799,13 @@ export const porcelainTide: Scenario = {
       id: 'p6-close',
       phase: 6,
       phaseLabel: 'PHASE 6 · THE STRATEGIC CLOSE',
-      title: 'What the tide leaves behind',
+      title: 'The strategic close',
       narrative:
-        'The acute danger has crested. What remains is how you close the file — the posture you set ' +
-        'for the long contest, the lesson you carry out of the crisis. The quarantine, broken or ' +
-        'bargained away, will not be the last attempt to take Meilan a slice at a time. This last ' +
-        'choice will not be undone this week, but it will shape whether PORCELAIN TIDE is remembered ' +
-        'as a near-miss survived, a precedent set, or the night the next war was made more or less likely.',
+        'The acute phase has passed. What remains is the closing posture — the stance set for the ' +
+        'protracted contest and the lessons drawn from the crisis. The quarantine, whether broken or ' +
+        'negotiated away, is unlikely to be the last incremental attempt to coerce Meilan. This final ' +
+        'choice will shape whether PORCELAIN TIDE is assessed in retrospect as a crisis survived, a ' +
+        'precedent conceded, or a juncture that made the next conflict more or less likely.',
       decision: {
         prompt: 'How do you close out the crisis and prepare for the next tide?',
         options: [
@@ -797,22 +814,24 @@ export const porcelainTide: Scenario = {
             label:
               'Harden deterrence: a standing forward posture, an explicit red line on any future quarantine, deeper arming of Meilan.',
             consequence:
-              'You close the file by making the next fait accompli unthinkable — persistent presence ' +
-              'near the strait, a declared red line that any future cordon will be broken, accelerated ' +
-              'arming of Meilan so the island can resist on its own. The message to the Republic is ' +
-              'unmistakable; so is the higher, more militarised baseline you have just set across the theatre.',
+              'You close the crisis by raising the cost of any future fait accompli: a persistent ' +
+              'forward presence near the strait, a declared red line that any future cordon will be ' +
+              'broken, and accelerated arming of Meilan so the island can resist independently. The ' +
+              'message to the Republic is clear, as is the higher, more militarised baseline now set ' +
+              'across the theatre.',
             critique: {
               strengths: [
                 'Raises the cost of the next salami-slice and reassures Meilan and allies that resolve is real and lasting.',
                 'Converts a one-off survival into a standing deterrent against a repeat.',
               ],
               risks: [
-                'A hardened forward posture locks in a higher floor of confrontation and standing forces-risk indefinitely.',
-                'Red lines and forward basing can read in the Republic as encirclement, fuelling the next crisis rather than deterring it.',
+                'A hardened forward posture establishes a higher baseline of confrontation and standing forces risk indefinitely.',
+                'Red lines and forward basing may be read in the Republic as encirclement, contributing to the next crisis rather than deterring it.',
               ],
               whyChosen:
-                'A leader who concludes the quarantine happened because deterrence looked soft closes ' +
-                'the file by making it hard, accepting a tenser baseline as the price of preventing a repeat.',
+                'A leader who concludes that the quarantine occurred because deterrence appeared weak ' +
+                'closes the crisis by strengthening it, accepting a more tense baseline as the price of ' +
+                'preventing a recurrence.',
               doctrine:
                 'Deterrence restoration and the security dilemma: re-signalling resolve to prevent the ' +
                 'next fait accompli, at the risk that the hardening itself is read as threat and drives ' +
@@ -827,11 +846,11 @@ export const porcelainTide: Scenario = {
             label:
               'Attack the root: de-concentrate the chip dependence and build economic resilience, so the next quarantine has no leverage.',
             consequence:
-              'You spend your remaining capital on the unglamorous fix — diversifying advanced ' +
-              'fabrication across the coalition, building chip and energy reserves, hardening the ' +
-              'supply chains that made a quarantine of one island a global emergency. No fleet sails, ' +
-              'no enemy is named tonight. But the lever the Republic just pulled will be worth far ' +
-              'less the next time it reaches for it.',
+              'You direct remaining capital to the structural remedy: diversifying advanced ' +
+              'fabrication across the coalition, building chip and energy reserves, and hardening the ' +
+              'supply chains that made a quarantine of one island a global emergency. No fleet sails ' +
+              'and no adversary is named. The lever the Republic has just used will be worth ' +
+              'considerably less the next time it is applied.',
             critique: {
               strengths: [
                 'Drains the coercive power of the quarantine by removing the dependence that made it bite worldwide.',
@@ -842,8 +861,8 @@ export const porcelainTide: Scenario = {
                 'Quiet structural investment earns no political credit and can be read as conceding the strait while you retool.',
               ],
               whyChosen:
-                'A leader whose lesson is that the crisis only had teeth because one island held the ' +
-                'world\'s chips invests in making sure that is no longer true.',
+                'A leader who concludes that the crisis had force only because one island held the ' +
+                'world\'s advanced chip production invests in removing that single point of dependence.',
               doctrine:
                 'Resilience and the de-weaponisation of interdependence: reducing strategic dependence ' +
                 'so an adversary\'s chokepoint leverage decays — defeating coercion structurally rather ' +
@@ -858,10 +877,11 @@ export const porcelainTide: Scenario = {
             label:
               'Build the off-ramps: a standing maritime crisis-management channel and rules of the road with the Republic.',
             consequence:
-              'You invest in the thing no headline will reward — a tested, standing channel with the ' +
-              'Republic for exactly this kind of standoff, and negotiated rules of the road to keep ' +
-              'coastguards, militias and grey hulls from turning the next incident into a war. It ' +
-              'concedes that there will be a next time, and tries to make sure it is survivable.',
+              'You invest in crisis-management machinery: a tested, standing channel with the ' +
+              'Republic for this category of standoff, and negotiated rules of the road to prevent ' +
+              'coastguards, militias and naval combatants from converting the next incident into a ' +
+              'war. The approach accepts that there will be a recurrence and seeks to make it ' +
+              'survivable.',
             critique: {
               strengths: [
                 'Directly addresses the mechanism that nearly produced catastrophe — an uncontrolled incident with no channel to manage it.',
@@ -872,8 +892,8 @@ export const porcelainTide: Scenario = {
                 'Rules of the road only help if both sides honour them; a channel is not a guarantee against a determined fait accompli.',
               ],
               whyChosen:
-                'A leader whose lesson from the night is "we were one rammed hull from a war no one ' +
-                'wanted" invests in the machinery that makes the next collision recoverable.',
+                'A leader who concludes that the crisis came within a single collision of an unwanted ' +
+                'war invests in the machinery that makes the next such incident recoverable.',
               doctrine:
                 'Crisis-management architecture and inadvertent escalation: building standing channels ' +
                 'and rules of the road so that future incidents below the threshold of war have a human ' +

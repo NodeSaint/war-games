@@ -3,6 +3,28 @@
 All notable changes to War Games are recorded here. Every push to a shared branch
 should add an entry: date, branch, and a short summary.
 
+## 2026-06-10 — `dev` — Five flashpoint scenarios, register pass, AI-panel hardening
+
+**Added**
+
+- Five further scenarios as data, fictional analogues in a shared universe (real
+  flashpoint named only in each `basis`): **NORTHERN TITHE** (undersea
+  infrastructure / sub-threshold), **ATLANTIC TILT** (alliance cohesion & reliance
+  on the principal ally), **NARROW WATERS** (maritime coercion / nuclear
+  threshold), **PORCELAIN TIDE** (fait-accompli quarantine), **TRIDENT PACT**
+  (alliance technology). Catalogue now holds eight scenarios.
+
+**Changed**
+
+- **Register pass across all copy** to an academic, reserved, analytically precise
+  voice for a defence/policy/postgraduate audience (SCHEMA §5a now codifies it;
+  scenario-author and critique-designer agents updated). Revised ending narratives,
+  debrief and profile prose, catalogue/About copy, and every scenario's narrative,
+  consequence and critique prose — structure, ids, effects and style tags untouched.
+- **AI deep-analysis panel**: clarified privacy copy and added explicit best-practice
+  guidance (clear-text localStorage exposure, use a spend-limited key, do not
+  remember on shared machines).
+
 ## 2026-06-10 — `main` — Catalogue expanded + first live deploy confirmed
 
 **Added**

@@ -125,6 +125,31 @@ critique:
 - **Stays fictional.** Invented states, actors and events only. No real public
   figures; no attributed quotes to real people.
 
+## 5a. Register and voice (mandatory)
+
+The audience is professional: defence and intelligence practitioners,
+policymakers, and postgraduate researchers in strategic and war studies. Write
+for readers already fluent in the concepts. The register is **academic,
+reserved, and analytically precise** — the voice of a staff-college exercise
+injection or a strategic-studies assessment, not a thriller.
+
+- **Inform accurately and soberly.** Prefer measured, declarative prose and
+  correct terminology used precisely. State uncertainty as uncertainty
+  (assessed, likely, consistent with, at moderate confidence).
+- **Avoid melodrama and literary effect.** No theatrical sentence fragments, no
+  sensory colour for its own sake, no rhetorical flourish, no exclamation. Cut
+  any line written to sound dramatic rather than to convey information.
+- **Respect the reader.** Do not over-explain basic concepts; do not editorialise
+  or moralise. Lay out the strategic logic and let the reader judge.
+- **Concision over atmosphere.** A scene-setting narrative should read like a
+  situation report, not a chapter opening. Three precise sentences beat a vivid
+  paragraph.
+- The second person is acceptable for framing the decision ("you must decide"),
+  but keep it composed and analytical.
+
+This register applies to every field that contains prose — `brief`, `narrative`,
+`consequence`, and all `critique` text — and to UI copy.
+
 ## 6. Registering the scenario
 
 ```ts

@@ -22,6 +22,9 @@ option and the doctrinal grounding. Your job is to make the game teach.
   quotes from real people. British English.
 - **Calibrated, not preachy.** There is rarely one right answer; show the
   trade-off, do not moralise.
+- **Academic, reserved register.** The audience is fluent in the concepts. Write
+  measured, precise, sober analysis — no melodrama or rhetorical flourish. See
+  SCHEMA §5a.
 
 ## Method
 

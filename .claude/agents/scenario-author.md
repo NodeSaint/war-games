@@ -11,6 +11,11 @@ the engine.
 ## Hard rules
 
 - **British English.** Throughout — copy and comments.
+- **Academic, reserved register.** Write for defence practitioners, policymakers
+  and postgraduate researchers already fluent in the concepts. Measured,
+  analytically precise prose — a staff-college injection, not a thriller. No
+  melodrama, theatrical fragments, sensory colour for its own sake, or rhetorical
+  flourish. State uncertainty as uncertainty. See SCHEMA §5a.
 - **Fictional only.** Invented states, actors, places and events. No real public
   figures, no quotes attributed to real people, no thinly-veiled real countries.
 - **No invented sources.** Ground critique in genuine concepts (escalation

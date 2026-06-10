@@ -22,15 +22,16 @@ export function resolveEnding(
     return {
       id: 'pyrrhic-resolve',
       title: 'Pyrrhic Resolve',
-      verdict: 'You held the line — but the bill came due in blood and risk.',
+      verdict:
+        'Deterrence held, but near the ceiling of the escalation ladder and with forces heavily exposed.',
       tone: 'mixed',
       narrative:
-        'The adversary blinked, and your resolve was never in doubt. Yet you bought that ' +
-        'credibility at the top of the escalation ladder, with forces and civilians exposed ' +
-        'further than any planner would have chosen in the cold light of the briefing room. ' +
-        'Deterrence held this time. The uncomfortable question your successors will ask is ' +
-        'whether the same hand, played again, ends with the shooting starting before anyone ' +
-        'means it to.',
+        'The adversary ultimately declined to escalate further, and your resolve was not in ' +
+        'question. That outcome was secured, however, close to the top of the escalation ladder, ' +
+        'with own and allied forces — and civilians — exposed well beyond what deliberate ' +
+        'planning would have accepted. Deterrence held on this occasion. The open question is ' +
+        'whether the same approach, repeated, would reliably stop short of an exchange that ' +
+        'neither side intended.',
     }
   }
 
@@ -38,14 +39,16 @@ export function resolveEnding(
     return {
       id: 'escalation-spiral',
       title: 'Escalation Spiral',
-      verdict: 'The ladder climbed itself. Control slipped faster than decisions could be made.',
+      verdict:
+        'Escalation outran decision; control passed to the dynamics of the crisis rather than its participants.',
       tone: 'bad',
       narrative:
-        'Each move was defensible in isolation; together they compressed the time for ' +
-        'judgement until the crisis was setting your tempo rather than the other way round. ' +
-        'Signals were read as threats, threats as intent, and the off-ramps closed one by one. ' +
-        'This is how wars begin that nobody in the room actually wanted — not by decision, but ' +
-        'by the accumulation of reasonable-sounding steps under a shrinking clock.',
+        'Each step was defensible in isolation, but in combination they compressed the time ' +
+        'available for judgement until the crisis, rather than its participants, set the tempo. ' +
+        'Signals were read as threats and threats as intent, and successive off-ramps closed. ' +
+        'This is the established pattern of inadvertent escalation: not a decision for war, but ' +
+        'an accumulation of individually reasonable steps taken under a contracting decision ' +
+        'window.',
     }
   }
 
@@ -53,48 +56,48 @@ export function resolveEnding(
     return {
       id: 'doctrine-win',
       title: 'Crisis Contained',
-      verdict: 'Escalation controlled, the alliance intact, deterrence credible. A clean hand.',
+      verdict: 'Escalation controlled, the alliance intact, deterrence credible.',
       tone: 'good',
       narrative:
-        'You bought time without buying war. The alliance spoke with one voice, your resolve ' +
-        'was legible to the other side, and you declined the moves that would have felt strong ' +
-        'in the moment and looked reckless in the inquiry. Crucially you matched your tempo to ' +
-        'your confidence: you did not let machine-speed events stampede you into acting before ' +
-        'you understood them. This is what escalation control looks like when it works — ' +
-        'quiet, unglamorous, and very hard to do.',
+        'You contained the crisis without resort to force. The alliance maintained a common ' +
+        'position, your resolve was legible to the adversary, and you declined the options that ' +
+        'would have appeared resolute in the moment but proved difficult to defend on review. ' +
+        'Notably, you matched tempo to confidence, declining to let machine-speed events compel ' +
+        'action ahead of understanding. This is escalation control functioning as intended: ' +
+        'unspectacular, and demanding to execute.',
     }
   }
 
   if (decoupled) {
     return {
       id: 'strategic-own-goal',
-      title: 'Strategic Own-Goal',
-      verdict: 'You avoided the war and lost the contest anyway.',
+      title: 'Strategic Reversal',
+      verdict: 'Armed conflict was avoided; the strategic contest was nonetheless lost.',
       tone: 'bad',
       narrative:
-        'No shots that mattered, no escalation to speak of — and yet the adversary achieved ' +
-        'its aim. Caution curdled into capitulation in the reading of others: an ally hedged, ' +
-        'your public lost faith, or your deterrent was spent so cheaply that no one believes it ' +
-        'now. This is the quieter defeat the textbooks warn about. Restraint and weakness can ' +
-        'look identical from the outside; what separates them is whether anyone still believes ' +
-        'you would act. They no longer do.',
+        'There was no meaningful escalation, yet the adversary secured its objective. Restraint ' +
+        'was read by others as capitulation: an ally hedged, domestic confidence eroded, or the ' +
+        'deterrent was expended so cheaply that it no longer persuades. This is the quieter form ' +
+        'of defeat the literature identifies. Restraint and weakness can be indistinguishable ' +
+        'from the outside; what separates them is whether others still judge that you would act. ' +
+        'On the present evidence, they do not.',
     }
   }
 
   return {
     id: 'uneasy-standdown',
     title: 'Uneasy Stand-down',
-    verdict: 'The crisis passed. Nobody is sure it is over, and nobody is satisfied.',
+    verdict: 'The immediate crisis passed without resolution of the underlying dispute.',
     tone: 'mixed',
     narrative:
-      'You got through it. The immediate danger has receded, but the underlying dispute is ' +
-      'untouched and several of your instruments are more worn than when you started. ' +
+      'The acute danger has receded, but the underlying dispute is untouched and several of ' +
+      'your instruments are more degraded than at the outset. ' +
       (m.attribution < 50
-        ? 'You never did establish, beyond argument, who did what — and that ambiguity will be ' +
-          'litigated long after the headlines move on. '
-        : 'At least the record of what happened is now reasonably clear, which will matter in ' +
-          'the months of recrimination ahead. ') +
-      'A stand-down, not a settlement. The file stays open.',
+        ? 'Responsibility was not established to a standard that would settle argument, and that ' +
+          'ambiguity will be contested well after the episode leaves the headlines. '
+        : 'The record of events is now reasonably clear, which will matter through the period of ' +
+          'recrimination that follows. ') +
+      'This is a stand-down rather than a settlement; the matter remains open.',
   }
 }
 

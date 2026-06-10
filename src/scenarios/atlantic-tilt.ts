@@ -28,23 +28,24 @@ export const atlanticTilt: Scenario = {
   estPhases: 5,
   role: 'National Security Adviser to Verlandia, a front-line European Alliance member',
   brief:
-    'For ten days the Federation has been leaning on Verlandia. It began with a manufactured ' +
-    'incident on the eastern border — a "lost" patrol, a brief incursion, a frontier guard ' +
-    'detained and paraded on Federation screens — and has widened into something colder: an ' +
-    'energy supplier suddenly citing "technical faults", a wave of information operations ' +
-    'questioning whether anyone will really come to Verlandia\'s aid, and unusual Federation ' +
-    'exercises massing just across the line.\n\n' +
-    'None of it crosses the threshold of armed attack. All of it is calibrated. The timing is ' +
-    'the message: the Atlantic Power — Columbia, the senior ally whose guarantee underwrites the ' +
-    'whole Alliance — is consumed by a domestic crisis of its own, its attention visibly turned ' +
-    'inward and across to another theatre. The Federation is probing a single question, and the ' +
-    'whole continent is watching the answer: now that the Atlantic Power is distracted, will the ' +
-    'Alliance actually respond? Your Prime Minister wants options within the hour.',
+    'For ten days the Federation has applied graduated pressure to Verlandia. It opened with a ' +
+    'manufactured incident on the eastern border — a patrol described as "lost", a brief ' +
+    'incursion, and a frontier guard detained and shown on Federation media — and has since ' +
+    'broadened: an energy supplier citing "technical faults", an information campaign questioning ' +
+    'whether any ally will come to Verlandia\'s aid, and unusual Federation exercises massing ' +
+    'across the line.\n\n' +
+    'None of these acts crosses the threshold of armed attack, and each appears deliberately ' +
+    'calibrated to remain below it. The timing is assessed as the principal signal. The Atlantic ' +
+    'Power — Columbia, the senior ally whose guarantee underwrites the Alliance — is preoccupied ' +
+    'with a domestic crisis, its attention turned inward and toward another theatre. The ' +
+    'Federation is testing a single proposition, observed across the continent: with the Atlantic ' +
+    'Power distracted, will the Alliance respond? Your Prime Minister requires options within the ' +
+    'hour.',
   objectives: [
-    'Hold deterrence together while doubting your most important backer.',
-    'Balance reassurance-seeking from the Atlantic Power against building European self-reliance.',
-    'Keep the Alliance from fracturing — the adversary\'s cheapest win is decoupling.',
-    'Answer the probe firmly enough to deter without handing the Federation a pretext to escalate.',
+    'Sustain deterrence while the reliability of the principal ally is in doubt.',
+    'Balance reassurance from the Atlantic Power against the development of European self-reliance.',
+    'Preserve Alliance cohesion; decoupling is the adversary\'s least costly objective.',
+    'Answer the probe firmly enough to deter, without providing the Federation a pretext to escalate.',
   ],
   metricsInit: {
     escalation: 30,
@@ -61,19 +62,19 @@ export const atlanticTilt: Scenario = {
       id: 'p1-probe',
       phase: 1,
       phaseLabel: 'PHASE 1 · THE PROBE',
-      title: 'A question, not yet a war',
+      title: 'A test below the threshold',
       narrative:
-        'The picture on the wall is not ambiguous about who is doing this — the Federation\'s hand ' +
-        'is plain. What is ambiguous is what it wants, and what you can do about it. Every move has ' +
-        'been pitched just below the line that would trigger the Alliance\'s collective-defence ' +
-        'clause: pressure, not invasion; coercion, not war. The Federation is not trying to take ' +
-        'Verlandian territory tonight. It is trying to take Verlandian confidence — to demonstrate, ' +
-        'to your public and to every wavering capital, that the guarantee at the heart of the ' +
-        'Alliance is a bluff now that the Atlantic Power is looking the other way.\n\n' +
-        'Your first move sets the frame for everything after. Lean on the Atlantic Power for a ' +
-        'visible guarantee, and you reaffirm the old order — if it answers. Rally the Europeans for ' +
-        'an autonomous response, and you build self-reliance — but you signal that the old guarantee ' +
-        'may already be gone. Or you answer the probe yourself, quietly or firmly, alone.',
+        'Attribution is not in doubt: the Federation\'s hand is plain. Its objectives and the ' +
+        'available responses are less clear. Each move has been pitched just below the line that ' +
+        'would trigger the Alliance\'s collective-defence clause — coercion rather than armed ' +
+        'attack. The aim assessed is not Verlandian territory but Verlandian confidence: a ' +
+        'demonstration, to your public and to wavering capitals, that the guarantee at the heart ' +
+        'of the Alliance is hollow while the Atlantic Power is distracted.\n\n' +
+        'The opening response sets the frame for what follows. Leaning on the Atlantic Power for a ' +
+        'visible guarantee reaffirms the existing order, provided it answers. Rallying European ' +
+        'members for an autonomous response builds self-reliance, but may signal that the ' +
+        'guarantee is already gone. The alternative is to answer the probe alone, by restraint or ' +
+        'by force.',
       decision: {
         prompt: 'How do you respond to the probe in the first hour?',
         options: [
@@ -82,24 +83,24 @@ export const atlanticTilt: Scenario = {
             label:
               'Lean on the Atlantic Power: press Columbia hard for a visible, public reaffirmation of the guarantee.',
             consequence:
-              'You spend the night on secure lines to the Atlantic capital, pressing for a clear ' +
-              'public signal — a statement, a deployment, anything the Federation cannot miss. ' +
-              'Officials are warm but distracted; the crisis at home swallows their attention. They ' +
-              'promise to "look at options". You have bet your deterrence on a backer whose eyes are ' +
-              'elsewhere.',
+              'Secure channels to the Atlantic capital press for an unambiguous public signal — a ' +
+              'statement, a deployment, something the Federation cannot overlook. Officials are ' +
+              'supportive but distracted; their domestic crisis dominates their attention, and they ' +
+              'undertake to "look at options". Verlandian deterrence now rests on a backer whose ' +
+              'attention is elsewhere.',
             critique: {
               strengths: [
                 'A reaffirmed Atlantic guarantee is still the single most powerful deterrent on the continent.',
                 'Keeps the Alliance\'s centre of gravity — the transatlantic link — where it has always been.',
               ],
               risks: [
-                'If the Atlantic Power hedges or delays, you have publicly revealed your dependence and its limits.',
-                'Asking and being answered weakly is worse than not asking — it dramatises the very doubt the Federation is selling.',
+                'If the Atlantic Power hedges or delays, Verlandian dependence and its limits are exposed publicly.',
+                'A weak answer to an explicit request is worse than no request, as it confirms the doubt the Federation is promoting.',
               ],
               whyChosen:
-                'For decades the guarantee has held precisely because no one tested it; a leader may ' +
-                'judge that the safest move is to make the senior ally restate it loudly, before the ' +
-                'doubt sets.',
+                'The guarantee has held in part because it has not been tested; a leader may judge ' +
+                'that the most prudent course is to secure a visible reaffirmation from the senior ' +
+                'ally before doubt consolidates.',
               doctrine:
                 'Extended deterrence and the credibility of security guarantees: the guarantee deters ' +
                 'only while believed, and reaffirming it visibly is the orthodox way to shore it up — ' +
@@ -114,11 +115,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Rally the Europeans: convene front-line Alliance neighbours for a visibly autonomous response.',
             consequence:
-              'You skip the long-distance call and reach for your neighbours. Within hours a ' +
-              'cluster of European Alliance members agrees a joint posture — shared air policing, ' +
-              'a coordinated statement, contingency planning that does not wait on the Atlantic ' +
-              'capital. It is real, it is fast, and it quietly announces that Europe is preparing ' +
-              'to stand without its senior partner.',
+              'Rather than approach the Atlantic capital, Verlandia turns to its neighbours. ' +
+              'Within hours a group of European Alliance members agrees a joint posture — shared ' +
+              'air policing, a coordinated statement, and contingency planning that does not await ' +
+              'the senior ally. The response is substantive and rapid, and it signals that Europe ' +
+              'is preparing to act without its principal partner.',
             critique: {
               strengths: [
                 'Builds genuine European self-reliance — the one hedge against an absent guarantor.',
@@ -145,23 +146,25 @@ export const atlanticTilt: Scenario = {
             label:
               'De-escalate quietly: open a discreet channel to the Federation and avoid giving them a pretext.',
             consequence:
-              'You judge the probe is fishing for an over-reaction, and decline to provide one. A ' +
-              'quiet message goes to the Federation through a trusted intermediary: we see what you ' +
-              'are doing, we are not seeking a confrontation, the border guard should come home. ' +
-              'The temperature drops a degree. Your domestic press, seeing no visible firmness, ' +
-              'begins to ask whether you are being pushed around.',
+              'Assessing the probe as an attempt to provoke an over-reaction, Verlandia declines ' +
+              'to provide one. A discreet message passes to the Federation through a trusted ' +
+              'intermediary: the activity is recognised, confrontation is not sought, and the ' +
+              'border guard should be returned. The crisis cools marginally. Absent any visible ' +
+              'firmness, the domestic press begins to question whether the government is being ' +
+              'coerced.',
             critique: {
               strengths: [
                 'Refuses the Federation the escalation it may be trying to bait, keeping the crisis low.',
                 'Avoids committing you to a posture you might not be able to sustain if the Atlantic Power stays absent.',
               ],
               risks: [
-                'Quiet restraint against a coercive probe can be read — at home and abroad — as the bluff being called.',
-                'If it leaks, you look like a front-line state that flinched, eroding deterrence across the Alliance.',
+                'Quiet restraint against a coercive probe may be read, at home and abroad, as the guarantee being called and found wanting.',
+                'If the channel is disclosed, Verlandia appears to be a front-line state that yielded, eroding deterrence across the Alliance.',
               ],
               whyChosen:
-                'A leader who fears that a hard answer with a distracted backer is a bluff waiting to ' +
-                'be exposed may choose to lower the stakes rather than raise a hand they cannot back.',
+                'A leader who judges that a firm response backed only by a distracted ally is itself ' +
+                'a bluff may prefer to lower the stakes rather than commit to a posture that cannot ' +
+                'be sustained.',
               doctrine:
                 'Escalation control and audience costs: denying the adversary a pretext is sound, but ' +
                 'visible passivity under coercion generates its own costs — a front-line state read as ' +
@@ -176,23 +179,23 @@ export const atlanticTilt: Scenario = {
             label:
               'Answer firmly alone: mobilise Verlandian forces to the border and make the cost of further probing explicit.',
             consequence:
-              'You do not wait for anyone. Verlandian reserves are called up, units move east, and ' +
-              'you state plainly that further pressure will be met. The home front rallies behind a ' +
-              'government that is finally seen to act. The Federation, watching a single state ' +
-              'mobilise without visible Alliance backing, takes careful note of exactly how alone ' +
-              'you are.',
+              'Verlandia acts without awaiting others. Reserves are called up, units move east, ' +
+              'and the government states plainly that further pressure will be met. Domestic ' +
+              'opinion consolidates behind a government now seen to act. The Federation observes a ' +
+              'single state mobilising without visible Alliance backing, and notes precisely how ' +
+              'isolated Verlandia is.',
             critique: {
               strengths: [
-                'Demonstrates national resolve immediately and steadies a public that wanted firmness.',
-                'A sovereign state defending its own border owes nothing to a hesitant ally\'s timetable.',
+                'Demonstrates national resolve immediately and steadies a public that sought firmness.',
+                'A sovereign state defending its own border is not bound to a hesitant ally\'s timetable.',
               ],
               risks: [
-                'Acting alone advertises the gap the Federation is probing — that the guarantee is not visibly behind you.',
-                'A national mobilisation without Alliance cover raises forces-risk and can be framed as the escalation.',
+                'Acting alone makes visible the gap the Federation is probing — that the guarantee is not evidently behind Verlandia.',
+                'A national mobilisation without Alliance cover raises forces-risk and may be framed as the escalating act.',
               ],
               whyChosen:
-                'A leader who believes a front-line state cannot outsource its own deterrence — and ' +
-                'will not wait on a distracted patron — answers the probe with its own forces.',
+                'A leader who holds that a front-line state cannot outsource its own deterrence, and ' +
+                'will not wait on a distracted patron, answers the probe with national forces.',
               doctrine:
                 'Self-help and the entrapment/abandonment dilemma: a state hedging against abandonment ' +
                 'by acting unilaterally signals resolve, but forgoes the collective weight that makes ' +
@@ -211,15 +214,15 @@ export const atlanticTilt: Scenario = {
       id: 'p2-lean',
       phase: 2,
       phaseLabel: 'PHASE 2 · THE TRANSATLANTIC LINK',
-      title: 'Waiting on Columbia',
+      title: 'Awaiting Columbia',
       narrative:
-        'Your posture has put the transatlantic link at the centre of the crisis — either by ' +
-        'leaning on it directly, or by acting in a way that makes the Atlantic Power\'s backing ' +
-        'the thing everyone is now waiting for. The senior ally\'s response, when it comes, is ' +
-        'real but thin: a supportive line buried in a longer statement about its own domestic ' +
-        'troubles, a single squadron "available to rotate", a private note that this is "a moment ' +
-        'for the Alliance to share the load". It is not abandonment. It is not reassurance either. ' +
-        'The Federation reads it instantly, and so do your wavering neighbours.',
+        'The chosen posture has placed the transatlantic link at the centre of the crisis — ' +
+        'whether by leaning on it directly, or by acting in a way that makes the Atlantic Power\'s ' +
+        'backing the awaited variable. The senior ally\'s response is genuine but limited: a ' +
+        'supportive line within a longer statement on its own domestic difficulties, a single ' +
+        'squadron "available to rotate", and a private note that this is "a moment for the ' +
+        'Alliance to share the load". It is neither abandonment nor reassurance. The Federation ' +
+        'and the wavering neighbours read it accordingly.',
       decision: {
         prompt: 'The senior ally\'s backing is thin and conditional. How do you handle the link?',
         options: [
@@ -228,10 +231,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Press for a concrete, visible commitment now — a deployment the Federation cannot misread.',
             consequence:
-              'You push hard for something tangible: not words, but a tripwire — allied boots and ' +
-              'aircraft visibly forward, dated and announced. After a tense day the Atlantic Power ' +
-              'agrees to a modest but real forward rotation. The signal lands; the Federation\'s ' +
-              'exercises pause. You have spent considerable capital, and an IOU, to get it.',
+              'Verlandia presses for something tangible — not words but a tripwire: allied ground ' +
+              'and air forces visibly forward, dated and announced. After a difficult day the ' +
+              'Atlantic Power agrees to a modest but genuine forward rotation. The signal registers ' +
+              'and the Federation\'s exercises pause. The commitment has cost considerable political ' +
+              'capital and a standing obligation.',
             critique: {
               strengths: [
                 'A visible tripwire is the hardest, clearest form of extended deterrence available.',
@@ -258,11 +262,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Accept the load-sharing framing: take on more of the burden to keep the senior ally aboard cheaply.',
             consequence:
-              'You take the hint and absorb it. Verlandia volunteers to carry more — more spending, ' +
-              'more forces forward, a public acceptance that the front-line states will shoulder the ' +
-              'immediate weight. The Atlantic Power, relieved, lends warm words and quiet enablers. ' +
-              'You have kept the link intact by making yourself useful, and made your dependence a ' +
-              'little less visible.',
+              'Verlandia accepts the framing. It volunteers to carry more — increased spending, ' +
+              'additional forces forward, and a public acknowledgement that the front-line states ' +
+              'will bear the immediate weight. The Atlantic Power responds with support and quiet ' +
+              'enablers. The link is preserved by demonstrating utility, and Verlandian dependence ' +
+              'is rendered somewhat less visible.',
             critique: {
               strengths: [
                 'Keeps the senior ally engaged by lowering its cost — burden-sharing as cohesion maintenance.',
@@ -289,10 +293,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Hedge: take the thin support, but quietly begin building European alternatives in case it thins further.',
             consequence:
-              'You pocket what the Atlantic Power offers without complaint, and at the same time ' +
-              'open discreet talks with European neighbours on capabilities the senior ally has ' +
-              'always provided. Nothing is announced. It is prudent, and if it surfaces, the ' +
-              'Atlantic Power will read it as exactly the hedging that hastens its own departure.',
+              'Verlandia accepts the Atlantic Power\'s offer without objection while opening ' +
+              'discreet talks with European neighbours on capabilities the senior ally has ' +
+              'traditionally provided. Nothing is announced. The course is prudent, but if ' +
+              'disclosed, the Atlantic Power is likely to read it as the hedging that accelerates ' +
+              'its own disengagement.',
             critique: {
               strengths: [
                 'Buys insurance against abandonment without forcing a public break with the patron.',
@@ -303,8 +308,8 @@ export const atlanticTilt: Scenario = {
                 'Half-built European alternatives deter no one in the meantime; you carry the gap regardless.',
               ],
               whyChosen:
-                'A leader who suspects the guarantee is quietly eroding hedges quietly too — taking ' +
-                'today\'s support while insuring against tomorrow\'s absence.',
+                'A leader who assesses that the guarantee is gradually eroding hedges accordingly, ' +
+                'accepting present support while insuring against its future absence.',
               doctrine:
                 'The hedging dilemma in alliance politics: insuring against abandonment can provoke ' +
                 'the abandonment it guards against, because the patron reads autonomy-building as the ' +
@@ -325,13 +330,13 @@ export const atlanticTilt: Scenario = {
       phaseLabel: 'PHASE 2 · THE EUROPEAN HAND',
       title: 'A coalition of the exposed',
       narrative:
-        'Your posture has thrown the weight onto Europe — whether by rallying neighbours directly ' +
-        'or by lowering the temperature in a way that left the continent, not the ocean, holding ' +
-        'the file. A core of front-line and near-front European Alliance members is now in the room ' +
-        'with you, and the room is split. Some want a muscular, visibly autonomous European posture ' +
-        'that proves the continent can stand alone. Others are terrified of doing anything that ' +
-        'looks like writing the Atlantic Power out of the alliance — and a couple are quietly ' +
-        'wondering whether this is Verlandia\'s problem more than theirs.',
+        'The chosen posture has shifted the weight onto Europe — whether by rallying neighbours ' +
+        'directly or by lowering the temperature in a way that left the continent, rather than the ' +
+        'Atlantic Power, holding the file. A core of front-line and near-front European Alliance ' +
+        'members now sits with Verlandia, and the group is divided. Some favour a robust, visibly ' +
+        'autonomous European posture demonstrating that the continent can act alone. Others are ' +
+        'reluctant to take any step that resembles writing the Atlantic Power out of the alliance. ' +
+        'A few question whether the problem is principally Verlandia\'s rather than their own.',
       decision: {
         prompt: 'Europe is in the room but divided. How do you shape the autonomous response?',
         options: [
@@ -340,11 +345,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Build the European pillar: a substantial joint deployment and command arrangement that stands on its own.',
             consequence:
-              'You push the coalition toward something real — pooled air defence, a combined ' +
-              'forward presence under European command, a standing crisis cell. It is the most ' +
-              'serious continental response in memory. It also, unmistakably, builds a European ' +
-              'capability that does not need the Atlantic capital to function — and the Atlantic ' +
-              'capital notices.',
+              'Verlandia drives the coalition toward substantive measures — pooled air defence, a ' +
+              'combined forward presence under European command, and a standing crisis cell. It is ' +
+              'the most significant continental response in recent memory. It also constructs a ' +
+              'European capability that can function without the Atlantic capital, which the ' +
+              'Atlantic capital duly notes.',
             critique: {
               strengths: [
                 'Demonstrates that European deterrence is not theoretical — a hedge that actually deters.',
@@ -371,10 +376,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Hold the coalition together at the pace of the most reluctant — unity over ambition.',
             consequence:
-              'You judge that a cracked European front helps only the Federation, and pitch the ' +
-              'response to what every member can sign. The result is modest — coordinated patrols, a ' +
-              'joint statement, shared intelligence — but it is genuinely unanimous, and it keeps ' +
-              'both the cautious Europeans and an Atlantic-facing wing inside the same tent.',
+              'Assessing that a fractured European front serves only the Federation, Verlandia ' +
+              'pitches the response to what every member can endorse. The result is modest — ' +
+              'coordinated patrols, a joint statement, shared intelligence — but genuinely ' +
+              'unanimous, and it keeps both the cautious Europeans and an Atlantic-facing group ' +
+              'within the same framework.',
             critique: {
               strengths: [
                 'Unanimity is itself a deterrent signal — the Federation cannot find a seam to widen.',
@@ -400,11 +406,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Lead from the front: have Verlandia move first and visibly, daring the others to follow.',
             consequence:
-              'You stop waiting for consensus and act, betting the coalition will rally to a state ' +
-              'already moving. Verlandian forces shift east under a European banner you have largely ' +
-              'written yourself. Two neighbours fall in behind within a day; one resents being ' +
-              'bounced; the cautious ones grumble that Verlandia is dragging the continent toward a ' +
-              'fight on its terms.',
+              'Verlandia ceases to wait for consensus and acts, on the calculation that the ' +
+              'coalition will align with a state already in motion. Verlandian forces move east ' +
+              'under a European framework largely of Verlandia\'s own drafting. Two neighbours join ' +
+              'within a day; one resents being pre-empted; the cautious members object that ' +
+              'Verlandia is drawing the continent toward a confrontation on its own terms.',
             critique: {
               strengths: [
                 'Breaks a deadlocked coalition by creating a fact others must respond to.',
@@ -435,20 +441,18 @@ export const atlanticTilt: Scenario = {
       id: 'p3-ambiguity',
       phase: 3,
       phaseLabel: 'PHASE 3 · THE AMBIGUOUS SIGNAL',
-      title: 'Two messages on the same morning',
+      title: 'Two signals, one morning',
       narrative:
-        'However you reached this point, the crisis sharpens on a single morning. Two things land ' +
-        'at once.\n\n' +
-        'First, the Atlantic Power sends a signal so carefully ambiguous it can only be deliberate. ' +
-        'A senior figure restates the alliance commitment in ringing terms — and, in the same ' +
-        'breath, muses publicly that allies "must be realistic about what they can expect" and that ' +
-        'every guarantee "depends on shared effort". It reaffirms and it qualifies. It is designed ' +
-        'to be read both ways, and it will be.\n\n' +
-        'Second, the Federation escalates the probe to exploit exactly that doubt: a larger ' +
-        '"exercise" now sits astride the border, the detained guard is charged rather than ' +
-        'released, and a Federation spokesman openly invites Verlandia to "ask Columbia whether it ' +
-        'will really fight for you". The probe has become a public test of the guarantee, staged ' +
-        'for an audience of waverers.',
+        'However this point was reached, two developments arrive together on the same morning.\n\n' +
+        'First, the Atlantic Power issues a signal whose ambiguity is assessed as deliberate. A ' +
+        'senior figure restates the alliance commitment in strong terms while observing publicly ' +
+        'that allies "must be realistic about what they can expect" and that every guarantee ' +
+        '"depends on shared effort". The statement both reaffirms and qualifies, and is evidently ' +
+        'constructed to be read either way.\n\n' +
+        'Second, the Federation escalates the probe to exploit that doubt: a larger "exercise" now ' +
+        'straddles the border, the detained guard is charged rather than released, and a Federation ' +
+        'spokesman invites Verlandia to "ask Columbia whether it will really fight for you". The ' +
+        'probe has become a public test of the guarantee, staged for an audience of waverers.',
       decision: {
         prompt: 'The guarantor is ambiguous and the Federation has called the question. How do you respond?',
         options: [
@@ -457,22 +461,24 @@ export const atlanticTilt: Scenario = {
             label:
               'Force the issue: publicly hold the Atlantic Power to its words and demand it resolve the ambiguity.',
             consequence:
-              'You decline to let the ambiguity stand. In coordination with allies you publicly ' +
-              'welcome the reaffirmation, treat the guarantee as settled fact, and frame any ' +
-              'wavering as a Federation fiction. It boxes the Atlantic Power into its better half — ' +
-              'and risks provoking it, mid-domestic-crisis, into resenting being managed in public.',
+              'Verlandia declines to let the ambiguity stand. In coordination with allies it ' +
+              'publicly welcomes the reaffirmation, treats the guarantee as settled, and frames any ' +
+              'wavering as a Federation fiction. This commits the Atlantic Power to the stronger ' +
+              'reading of its statement, at the risk of provoking resentment, mid-crisis, at being ' +
+              'managed in public.',
             critique: {
               strengths: [
                 'Refuses the Federation its prize by publicly converting ambiguity into commitment.',
                 'Audience costs cut your way: a guarantor publicly thanked for its resolve finds it costly to then hedge.',
               ],
               risks: [
-                'Cornering a distracted patron in public can backfire — it may resent the manoeuvre and pull back further.',
-                'If the Atlantic Power then qualifies again, you have dramatised the very doubt you tried to bury.',
+                'Cornering a distracted patron in public may be counterproductive, prompting it to resent the manoeuvre and disengage further.',
+                'If the Atlantic Power qualifies its position again, the manoeuvre will have amplified the doubt it sought to suppress.',
               ],
               whyChosen:
-                'A leader who knows guarantees are made real by being asserted will lock the patron ' +
-                'into its strongest words before the doubt hardens into the new fact.',
+                'A leader who holds that guarantees are made credible by assertion will commit the ' +
+                'patron to its strongest formulation before the doubt consolidates into accepted ' +
+                'fact.',
               doctrine:
                 'Audience costs and the manipulation of commitment: publicly crediting an ally with ' +
                 'resolve raises its cost of backing down — a way to harden a soft guarantee, but one ' +
@@ -487,11 +493,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Answer the Federation directly: meet the new pressure with a firm, proportionate counter-move.',
             consequence:
-              'You let the ambiguity sit and deal with the immediate provocation. A measured but ' +
-              'unmistakable counter — a reinforced border posture, the charges met with a hard ' +
-              'diplomatic and economic response, allies invited to join visibly. The Federation\'s ' +
-              'theatre is answered. The temperature climbs a rung, and the question of the guarantee ' +
-              'is left, for now, unresolved beneath it.',
+              'Verlandia leaves the ambiguity unaddressed and responds to the immediate ' +
+              'provocation. The counter is measured but unmistakable: a reinforced border posture, ' +
+              'a firm diplomatic and economic response to the charges, and allies invited to ' +
+              'participate visibly. The Federation\'s demonstration is answered. Escalation rises a ' +
+              'level, and the question of the guarantee remains, for now, unresolved.',
             critique: {
               strengths: [
                 'Denies the Federation the satisfaction of an unanswered taunt and steadies front-line nerves.',
@@ -502,8 +508,9 @@ export const atlanticTilt: Scenario = {
                 'A counter-move raises escalation and forces-risk without resolving who actually stands behind you.',
               ],
               whyChosen:
-                'A leader who judges that the probe must be answered on its own terms — coercion met ' +
-                'with resolve — will deal with the Federation first and the guarantor\'s mood later.',
+                'A leader who judges that the probe must be answered on its own terms, coercion met ' +
+                'with resolve, addresses the Federation first and the guarantor\'s position ' +
+                'afterwards.',
               doctrine:
                 'Deterrence by denial under a soft guarantee: meeting coercion firmly preserves resolve, ' +
                 'but doing so while the patron is ambiguous risks exposing a commitment you cannot fully back.',
@@ -517,24 +524,26 @@ export const atlanticTilt: Scenario = {
             label:
               'Absorb and deny: refuse the framing, decline the theatre, and quietly deepen European backstops.',
             consequence:
-              'You read the Federation\'s taunt as bait for a public crisis of confidence, and ' +
-              'refuse to perform one. No demand on the Atlantic Power, no escalation with the ' +
-              'Federation — just steady reassurance to your public, quiet coordination with ' +
-              'Europeans on the capabilities that matter, and a flat denial that any guarantee is ' +
-              'in doubt. It deprives the probe of its spectacle, and leaves some at home and abroad ' +
-              'unsure whether you are calm or cornered.',
+              'Assessing the Federation\'s challenge as an attempt to induce a public crisis of ' +
+              'confidence, Verlandia declines to provide one. There is no demand on the Atlantic ' +
+              'Power and no escalation with the Federation — only sustained reassurance to the ' +
+              'public, quiet coordination with Europeans on the relevant capabilities, and a flat ' +
+              'denial that any guarantee is in doubt. The probe is deprived of its spectacle, ' +
+              'though some observers at home and abroad cannot tell whether the posture reflects ' +
+              'composure or constraint.',
             critique: {
               strengths: [
                 'Denies the Federation the visible crisis of confidence its escalation was engineered to produce.',
                 'Lowers the temperature and buys time to build real European backstops out of the spotlight.',
               ],
               risks: [
-                'Refusing to perform resolve can be indistinguishable, to a frightened public, from having none.',
-                'Quiet is a wager that the underlying balance holds — if it does not, you will have signalled weakness.',
+                'Declining to display resolve may be indistinguishable, to an anxious public, from possessing none.',
+                'Restraint wagers that the underlying balance holds; if it does not, the posture will have signalled weakness.',
               ],
               whyChosen:
-                'A leader who sees the escalation as theatre fishing for an over-reaction starves it ' +
-                'of the reaction, betting that denial of objectives beats a contest of nerve.',
+                'A leader who assesses the escalation as a provocation seeking an over-reaction ' +
+                'denies it that reaction, judging denial of objectives preferable to a contest of ' +
+                'resolve.',
               doctrine:
                 'Denial of objectives and escalation control: defeating a coercive probe by refusing ' +
                 'the crisis of confidence it seeks — absorbing the pressure rather than answering it, ' +
@@ -553,20 +562,20 @@ export const atlanticTilt: Scenario = {
       id: 'p4-waver',
       phase: 4,
       phaseLabel: 'PHASE 4 · COHESION UNDER STRAIN',
-      title: 'The seam the Federation found',
+      title: 'Pressure on the seam',
       narrative:
-        'The Federation has stopped pushing on the wall and started pushing on the joints. Two ' +
-        'pressures arrive together.\n\n' +
+        'The Federation has shifted from direct pressure to exploiting the alliance\'s internal ' +
+        'divisions. Two pressures arrive together.\n\n' +
         'One pivotal European ally — a state whose territory and airspace anchor any defence of ' +
-        'Verlandia — has been offered a private deal: lucrative energy and trade terms, and a quiet ' +
-        'assurance of being left alone, in exchange for stepping back from the front and blocking ' +
-        'any robust Alliance line. Its government, facing its own restless public, is visibly ' +
-        'tempted.\n\n' +
-        'And the Atlantic Power, sensing it now holds the decisive vote, lets it be known that its ' +
-        'fuller backing is available — but only if Verlandia accepts terms: defer to Columbia\'s ' +
-        'tempo, drop the independent European arrangements, and shape your response to suit its ' +
-        'domestic politics. Cohesion, your centre of gravity, is being bought from two directions ' +
-        'at once.',
+        'Verlandia — has been offered a private arrangement: favourable energy and trade terms and ' +
+        'an assurance of non-interference, in exchange for stepping back from the front and ' +
+        'blocking any robust Alliance line. Its government, facing a restive public, is assessed to ' +
+        'be tempted.\n\n' +
+        'Concurrently, the Atlantic Power, judging that it now holds the decisive position, ' +
+        'indicates that fuller backing is available, conditional on Verlandia accepting terms: ' +
+        'defer to Columbia\'s tempo, abandon the independent European arrangements, and shape the ' +
+        'response to suit its domestic politics. Cohesion, the centre of gravity, is under bid from ' +
+        'two directions at once.',
       decision: {
         prompt: 'An ally is being peeled away and your guarantor is asking a price. This is the decisive cohesion test. What do you do?',
         options: [
@@ -575,11 +584,12 @@ export const atlanticTilt: Scenario = {
             label:
               'Outbid the Federation: hold the wavering ally with real burden-sharing and political cover, on European terms.',
             consequence:
-              'You refuse to let the seam open. Rather than pressure the tempted ally or capitulate ' +
-              'to the Atlantic Power, you put real resources on the table for the wavering partner — ' +
-              'backfill for its exposure, energy alternatives, a genuine share of the decisions — ' +
-              'and keep the European arrangements alive. It is expensive, it strains your domestic ' +
-              'budget, and it holds. The ally stays, willingly, and the Federation\'s offer curdles.',
+              'Verlandia acts to prevent the seam from opening. Rather than pressure the tempted ' +
+              'ally or capitulate to the Atlantic Power, it commits substantial resources to the ' +
+              'wavering partner — backfill for its exposure, energy alternatives, and a genuine ' +
+              'share in decisions — and keeps the European arrangements in place. The approach is ' +
+              'costly and strains the domestic budget, but it holds. The ally remains by choice, ' +
+              'and the Federation\'s offer loses its appeal.',
             critique: {
               strengths: [
                 'Defeats decoupling at its source by making staying more attractive than the Federation\'s bribe.',
@@ -591,8 +601,8 @@ export const atlanticTilt: Scenario = {
               ],
               whyChosen:
                 'A leader who treats cohesion as the centre of gravity pays to keep the coalition ' +
-                'whole, judging a united Europe worth more than either a bribe refused for it or a ' +
-                'patron\'s conditional embrace.',
+                'whole, judging a united Europe worth more than either the inducement declined for ' +
+                'it or the patron\'s conditional support.',
               doctrine:
                 'Burden-sharing as cohesion maintenance against decoupling: binding a wavering ally ' +
                 'through aligned interests and credible reassurance, denying the adversary the cheap ' +
@@ -607,12 +617,12 @@ export const atlanticTilt: Scenario = {
             label:
               'Accept the Atlantic Power\'s terms: take its full backing, drop the European track, defer to its tempo.',
             consequence:
-              'You take the heavier weapon. Verlandia accepts Columbia\'s conditions — the ' +
-              'independent European arrangements are shelved, your response is reshaped to its ' +
-              'comfort — and in return the Atlantic Power throws its full visible weight behind you. ' +
-              'The Federation\'s offer to the wavering ally collapses against the restored guarantee. ' +
-              'You have the strongest deterrent on the table, and you no longer fully own your own ' +
-              'strategy.',
+              'Verlandia takes the stronger instrument. It accepts Columbia\'s conditions — the ' +
+              'independent European arrangements are shelved and the response reshaped to the ' +
+              'patron\'s preferences — and in return the Atlantic Power commits its full visible ' +
+              'weight. The Federation\'s offer to the wavering ally collapses against the restored ' +
+              'guarantee. Verlandia holds the strongest deterrent available, but no longer fully ' +
+              'controls its own strategy.',
             critique: {
               strengths: [
                 'Restores the most credible deterrent available — the full, visible Atlantic guarantee.',
@@ -639,11 +649,12 @@ export const atlanticTilt: Scenario = {
             label:
               'Hold the line by pressure: make the wavering ally\'s defection costly and keep your hands free.',
             consequence:
-              'You decline both the Atlantic Power\'s terms and the expense of outbidding, and ' +
-              'instead lean hard on the wavering ally — reminding it pointedly what Alliance ' +
-              'membership has been worth and what a defection would cost it. It stays, for now, ' +
-              'resentful and noting that it was coerced by a partner as much as courted by the ' +
-              'adversary. Your autonomy is intact; the trust beneath the coalition is thinner.',
+              'Verlandia declines both the Atlantic Power\'s terms and the cost of outbidding, and ' +
+              'instead applies firm pressure to the wavering ally, reminding it what Alliance ' +
+              'membership has provided and what defection would cost. The ally remains, for now, ' +
+              'resentful, and notes that it was coerced by a partner as much as courted by the ' +
+              'adversary. Verlandian autonomy is intact; the trust underpinning the coalition is ' +
+              'diminished.',
             critique: {
               strengths: [
                 'Keeps the front intact without surrendering autonomy or emptying your treasury.',
@@ -675,14 +686,14 @@ export const atlanticTilt: Scenario = {
       id: 'p5-close',
       phase: 5,
       phaseLabel: 'PHASE 5 · THE STRATEGIC CLOSE',
-      title: 'What the tilt taught you',
+      title: 'The lesson of the tilt',
       narrative:
-        'The acute probe has crested. The Federation\'s exercises are thinning, the charged border ' +
-        'guard is suddenly to be "expelled" rather than tried, the energy supplier rediscovers its ' +
-        'capacity. The immediate test is passing. What remains is the lesson you carry out of it — ' +
-        'the posture you set for the long competition the Federation has just shown it intends to ' +
-        'wage against the seams of the Alliance, and against the credibility of a guarantee written ' +
-        'across an ocean. This last choice will outlive the crisis.',
+        'The acute phase of the probe has passed. The Federation\'s exercises are thinning, the ' +
+        'charged border guard is now to be expelled rather than tried, and the energy supplier has ' +
+        'recovered its capacity. The immediate test is subsiding. What remains is the posture set ' +
+        'for the long competition the Federation has signalled it intends to conduct against the ' +
+        'seams of the Alliance and the credibility of a guarantee underwritten across an ocean. ' +
+        'This final choice will outlast the crisis.',
       decision: {
         prompt: 'How do you close the file and set the long-term posture?',
         options: [
@@ -691,10 +702,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Institutionalise the lesson: drive a standing Alliance burden-sharing and rapid-reassurance framework.',
             consequence:
-              'You convert a near-miss into structure — agreed front-line reinforcement plans, a ' +
-              'standing reassurance mechanism that does not wait on the senior ally\'s news cycle, a ' +
-              'durable burden-sharing settlement. It binds Europe and the Atlantic Power into the ' +
-              'same machine, so the next probe meets a system, not an improvisation.',
+              'Verlandia converts a near-miss into structure — agreed front-line reinforcement ' +
+              'plans, a standing reassurance mechanism not contingent on the senior ally\'s domestic ' +
+              'cycle, and a durable burden-sharing settlement. This binds Europe and the Atlantic ' +
+              'Power into shared machinery, so that the next probe meets a system rather than an ' +
+              'improvisation.',
             critique: {
               strengths: [
                 'Turns one survived crisis into lasting cohesion and a faster, pre-agreed reassurance reflex.',
@@ -721,11 +733,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Build real autonomy: commit Verlandia and willing Europeans to a credible self-reliant deterrent.',
             consequence:
-              'You take the deeper lesson — that a guarantee you cannot control is a guarantee you ' +
-              'cannot count on — and commit to building genuine European deterrent capacity: ' +
-              'spending, command, capabilities the continent has always rented from across the ocean. ' +
-              'It is the work of years, not weeks. It also signals, to friend and adversary alike, ' +
-              'that Europe intends to be able to stand alone.',
+              'Verlandia draws the deeper conclusion — that a guarantee it cannot control is one it ' +
+              'cannot rely on — and commits to building genuine European deterrent capacity: ' +
+              'spending, command, and the capabilities the continent has long depended on from ' +
+              'across the ocean. This is the work of years rather than weeks. It also signals, to ' +
+              'allies and adversary alike, that Europe intends to be able to act alone.',
             critique: {
               strengths: [
                 'Addresses the root vulnerability — dependence on a distractible patron — at its source.',
@@ -752,10 +764,11 @@ export const atlanticTilt: Scenario = {
             label:
               'Recommit to the Atlantic bond: invest your capital in repairing and deepening the senior-ally relationship.',
             consequence:
-              'You judge that the link, frayed as it is, remains the surest shield, and spend your ' +
-              'remaining capital mending it — quiet diplomacy to re-engage the Atlantic Power, ' +
-              'visible burden-carrying to answer its grievance, a deliberate choice to keep Europe ' +
-              'inside the transatlantic frame rather than beside it. Unglamorous, and a bet that the ' +
+              'Verlandia assesses that the link, frayed as it is, remains the most reliable ' +
+              'shield, and commits its remaining capital to repairing it — quiet diplomacy to ' +
+              're-engage the Atlantic Power, visible burden-carrying to address its grievance, and ' +
+              'a deliberate choice to keep Europe within the transatlantic framework rather than ' +
+              'alongside it. The approach is unremarkable, and rests on the judgement that the ' +
               'guarantee can be made reliable again.',
             critique: {
               strengths: [
