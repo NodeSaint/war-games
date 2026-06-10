@@ -11,8 +11,8 @@ continuity across sessions.
 - [x] 3. Instrument-cluster UI + scene loop + catalogue/briefing/debrief screens.
 - [x] 4. Author SILENT LEDGER end-to-end (7-phase reconvergent DAG).
 - [x] 6. BYO-key AI deep-analysis panel (built early; Debrief depends on it).
-- [ ] First Pages deploy → confirm the live URL renders and plays.
-- [ ] 5. Add NIGHT CROSSING (2-step) + AI-cyber (4-step) scenarios.
+- [x] First Pages deploy → confirmed live; assets resolve at base path.
+- [x] 5. Add NIGHT CROSSING (2-step) + GREY CASCADE AI-cyber (4-step) scenarios.
 
 ## Follow-ups
 

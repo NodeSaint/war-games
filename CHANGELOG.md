@@ -3,6 +3,22 @@
 All notable changes to War Games are recorded here. Every push to a shared branch
 should add an entry: date, branch, and a short summary.
 
+## 2026-06-10 — `main` — Catalogue expanded + first live deploy confirmed
+
+**Added**
+
+- **GREY CASCADE** — 4-phase AI-enabled cyber escalation against critical
+  infrastructure (Intermediate); reconvergent DAG branching containment vs
+  active-defence, reconverging at a public "cascade" moment.
+- **NIGHT CROSSING** — 2-phase introductory drone-swarm border ROE exercise;
+  proves the catalogue's varying length.
+
+**Verified**
+
+- First GitHub Pages deploy is live at `https://nodesaint.github.io/war-games/`;
+  hashed JS/CSS assets resolve correctly at the `/war-games/` base path (200).
+- `npm run build` green with all three scenarios.
+
 ## 2026-06-10 — `dev` — Initial MVP vertical slice
 
 **Added**

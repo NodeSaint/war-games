@@ -51,19 +51,21 @@ src/scenarios/ index(registry) · silent-ledger(flagship) · …
 
 ## Status — where we are
 
-**MVP vertical slice is built and playable.** Engine, instrument-cluster UI, full
-flagship scenario SILENT LEDGER (7-phase reconvergent DAG), debrief with decision
-profile, and the BYO-key AI panel are all in. Build is green.
+**MVP is built, deployed and live.** Engine, instrument-cluster UI, debrief with
+decision profile, and the BYO-key AI panel are all in. Three scenarios shipped:
+**SILENT LEDGER** (7-phase, Advanced, flagship), **GREY CASCADE** (4-phase,
+Intermediate, AI-cyber), **NIGHT CROSSING** (2-phase, Introductory). Build green;
+live at https://nodesaint.github.io/war-games/ with assets resolving at base path.
 
 ## Next up (see tasks/todo.md and ISSUES.md)
 
-1. First Pages deploy + confirm the live URL renders correctly.
-2. Author the two shorter scenarios: **NIGHT CROSSING** (2-step drone-swarm
-   border incident) and an **AI-enabled cyber escalation** (4-step).
-3. Manual playtest pass of SILENT LEDGER across multiple routes to confirm
-   endings diverge by state.
-4. Accessibility sweep (focus order, reduced-motion, mobile) and a unit test or
-   two around `applyEffects` / `resolveEnding`.
+1. Manual playtest pass in a browser: walk each scenario to a debrief on desktop
+   and mobile; confirm endings diverge by state, deep links and resume work.
+2. Accessibility sweep (focus order, gauge labelling, mobile sidebar,
+   reduced-motion).
+3. A few unit tests around `applyEffects`, `signalLevel`, `resolveEnding`,
+   `computeProfile` (no test runner installed yet — add Vitest).
+4. Then the roadmap items in ISSUES.md (more domains, group mode, authoring UI).
 
 ## How to run a productive session on this project
 

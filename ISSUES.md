@@ -8,11 +8,9 @@ DONE / WONTFIX.
 
 ## Open
 
-- [OPEN] (deploy) First Pages deploy not yet confirmed rendering live. Verify the
-  `base` path resolves assets and that HashRouter deep links work on Pages.
-- [OPEN] (content) Only one scenario (SILENT LEDGER) shipped. Catalogue needs the
-  two shorter games to demonstrate varying length: NIGHT CROSSING (2-step) and an
-  AI-cyber escalation (4-step).
+- [OPEN] (a11y/playtest) Live deploy confirmed serving, but not yet manually
+  played end-to-end in a browser. Walk each scenario to a debrief on desktop and
+  mobile; confirm HashRouter deep links and resume-from-localStorage behave.
 - [OPEN] (testing) No automated tests yet. Priority targets: `applyEffects`
   clamping, `signalLevel` polarity, `resolveEnding` archetype boundaries,
   `computeProfile` axis maths.
@@ -40,4 +38,6 @@ DONE / WONTFIX.
 
 ## Resolved
 
-_(none yet)_
+- [DONE] (deploy) First Pages deploy confirmed live; assets resolve at base path.
+- [DONE] (content) Two shorter scenarios shipped: GREY CASCADE (4-step) and
+  NIGHT CROSSING (2-step). Catalogue now demonstrates varying length.
